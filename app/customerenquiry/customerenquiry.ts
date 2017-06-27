@@ -30,9 +30,9 @@ module app {
                 //     this.isSubmitButtonEnabled = false;
                 // }
                 //  window.location.href="new_policy.html";
-                else {
-                    // this.isSubmitButtonEnabled = true;
-                }
+                // else{
+                //     // this.isSubmitButtonEnabled = true;
+                // }
             }
             else {
                 this.isSubmitted = true;

@@ -5,8 +5,6 @@ var app;
             var _this = this;
             this.customerEnquiryValidate = function (isValid, reg) {
                 if (isValid) {
-                    {
-                    }
                 }
                 else {
                     _this.isSubmitted = true;
