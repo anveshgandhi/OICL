@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <title>The Oriental Insurance Company</title>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="The Oriental Insurance Company Ltd was a wholly owned subsidiary of the Oriental Government Security Life Assurance Company Ltd and was formed to carry out General Insurance business. The company has developed various types of insurance covers to cater to the needs of both the urban and rural population of India." lang="en-US" name="description" />
+		<meta name="description" content="The Oriental Insurance Company">
+		<meta name="keywords" content="The Oriental Insurance Company" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">        
+        <!-- DataTables -->
+        <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/dataTables.colVis.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/fixedColumns.dataTables.min.css" rel="stylesheet" type="text/css"/>       
+		
+        <!-- Datepicker-->
+        <link href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+        
+        <!-- Plugins css-->
+        <link href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/plugins/switchery/switchery.min.css">
+        <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+		<link href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+		<link href="assets/plugins/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+        <!-- Summernote css -->
+        <link href="assets/plugins/summernote/summernote.css" rel="stylesheet" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icons CSS -->
+        <link href="assets/css/icons.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <script>
+			function displayDate() {
+				var now = new Date();			
+				var day = ("0" + now.getDate()).slice(-2);
+				var month = ("0" + (now.getMonth() + 1)).slice(-2);
+				var today = now.getFullYear() + "-" + (month) + "-" + (day);			
+				document.getElementById("fname").value = today;
+				document.getElementById("fname1").value = today;
+			}
+		</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="step_form/jquery-multi-step-form.js" type="text/javascript"></script>
+<link href="step_form/jquery-multi-step-form.css" media="screen" rel="stylesheet" type="text/css"/>
+
+
+	
+    </head>
+
+    <body onload="displayDate()">
+        <div id="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar" id="topnav">
+                <!-- Top navbar -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+
+                            <!-- LOGO -->
+                            <div class="topbar-left">
+                                <div class="">
+                                    <a href="index.html" class="logo">
+                                        <img src="assets/images/logo.png" alt="logo" class="logo-lg" />
+                                        <img src="assets/images/logo_sm.png" alt="logo" class="logo-sm hidden" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="navbar-custom navbar-left">
+                                <div id="navigation">
+                                    <!-- Navigation Menu-->
+                                    <ul class="navigation-menu">                                       
+                                        <!--<li class="has-submenu">
+                                            <a href="#"> <span><i class="fa fa-unlock-alt"></i></span><span> Login </span></a>
+                                            <ul class="submenu">
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="register.html">Register as Direct User</a></li>
+                                                <li><a href="broker.html">Register as Broker User</a></li>
+                                                <li><a href="forgotpassword.html">Forgot Password</a></li>
+                                                <li><a href="changemobile.html">Change Mobile No</a></li>
+                                            </ul>
+                                        </li>-->
+											<li class="has-submenu">
+                                            <a href="custenquiry.html"><span><i class="fa fa-address-book-o"></i></span><span> Customer Enquiry </span></a>
+                                            
+                                        </li>
+
+                                        <li class="has-submenu">
+                                            <a href="#"><span><i class="fa fa-certificate"></i></span><span> Policy Services </span></a>
+                                            <ul class="submenu">
+                                                <li><a href="new_policy.html">New Policy</a></li>
+                                                <!--<li><a href="renew_policy.html">Renew Policy</a></li>-->
+                                                <li><a href="policies_list.html">Policies</a></li>
+                                            </ul>
+                                        </li>    
+                                        <li class="has-submenu">
+                                            <a href="claim_registration.html"><span><i class="fa fa-certificate"></i></span><span> Claim Registration </span></a>
+                                            
+                                        </li>                                   
+
+                                    </ul>
+                                    <!-- End navigation menu  -->
+                                </div>
+                            </div>
+
+                            <!-- Top nav Right menu -->
+                            <ul class="nav navbar-nav navbar-right top-navbar-items-right pull-right">
+                                <li class="top-menu-item-xs">
+                                    <!-- Mobile menu toggle-->
+                                    <a class="navbar-toggle">
+                                        <div class="lines">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </a>
+                                    <!-- End mobile menu toggle-->
+                                </li>
+                                <li class="hidden-xs">
+                                    <form role="search" class="navbar-left app-search pull-left">
+                                         <input type="text" placeholder="Search..." class="form-control">
+                                         <a href=""><i class="fa fa-search"></i></a>
+                                    </form>
+                                </li>
+                                <li class="dropdown top-menu-item-xs">
+                                    
+                                    <ul class="dropdown-menu p-0 dropdown-menu-lg">
+                                        <!--<li class="notifi-title"><span class="label label-default pull-right">New 3</span>Notification</li>-->
+                                        <li class="list-group notification-list" style="height: 267px;">
+                                           <div class="slimscroll">
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-diamond bg-primary"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">A new order has been placed A new order has been placed</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-cog bg-warning"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">New settings</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-bell-o bg-custom"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">Updates</h5>
+                                                        <p class="m-0">
+                                                            <small>There are <span class="text-primary font-600">2</span> new updates available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-user-plus bg-danger"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">New user registered</h5>
+                                                        <p class="m-0">
+                                                            <small>You have 10 unread messages</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                                <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-diamond bg-primary"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">A new order has been placed A new order has been placed</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-cog bg-warning"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">New settings</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+                                           </div>
+                                        </li>
+                                        <!--<li>-->
+                                            <!--<a href="javascript:void(0);" class="list-group-item text-right">-->
+                                                <!--<small class="font-600">See all notifications</small>-->
+                                            <!--</a>-->
+                                        <!--</li>-->
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown top-menu-item-xs">
+                                    <a href="" class="dropdown-toggle menu-right-item profile" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/mulla.jpg" alt="user-img" class="img-circle"> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="profile.html"><i class="ti-user m-r-10"></i> Profile</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="login.html"><i class="ti-power-off m-r-10"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!-- end container -->
+                </div> <!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- Page content start -->
+            <div class="page-contentbar">
+
+                <!-- START PAGE CONTENT -->
+                <div id="page-right-content1">
+
+                    <!-- HOME -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+					<div >
+                                            <div class="card-box">
+                                            	<h4 class="header-title m-t-0 m-b-20" style="margin-top: -10px; color:#01704a;">New Policy</h4>
+                                                
+                                                
+                                                <div id="multistepform-example-container">
+<ul id="multistepform-progressbar">
+<li class="active">Policy Details</li>
+<li>Documents</li>
+<li>Additional covers</li>
+</ul>
+<div class="form">
+<div class="tab-pane active" id="enrol_details">    
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                                        <label class="col-md-4 control-label">Policy No<span class="star">*</span></label>
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control" placeholder="Policy No" readonly="readonly">
+                                                                        </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                    <label class="col-md-4 control-label">Policy Plan</label>
+                                                                    <div class="col-md-8">
+                                                                       <select data-placeholder="type" class="form-control" id="type">
+                                                                            <option selected="selected">- select -</option>
+                                                                            <option value="">Liability Coverage</option>
+                                                                            <option value="">Collision Coverage</option>
+                                                                            <option value="">Comprehensive Coverage</option>
+                                                                            <option value="">Uninsured/Underinsured Motorist Coverage</option>
+                                                                            <option value="">Medical Payments</option>
+                                                                            <option value="">Personal Injury Protection</option>
+                                                                       </select>
+                                                                    </div>
+                                                                    </div>
+                                                          
+                                                            </div>
+                                                       </div> 
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                 <div class="form-group">
+                                                                        <label class="col-md-4 control-label">Customer Name<span class="star">*</span></label>
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control" placeholder="Customer Name">
+                                                                        </div>
+                                                                 </div>   
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                 <div class="form-group">
+                                                                        <label class="col-md-4 control-label">Profession</label>
+                                                                        <div class="col-md-8">
+                                                                            <select data-placeholder="type" class="form-control" id="type">
+                                                                            <option selected="selected">- select -</option>
+                                                                       </select>
+                                                                        </div>
+                                                                 </div>   
+                                                            </div>
+                                                            
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                 <div class="form-group">
+                                                                        <label class="col-md-4 control-label">Policy Start Date<span class="star">*</span></label>
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control datepicker-autoclose" placeholder="Policy Start Date" readonly="readonly">
+                                                                        </div>
+                                                                 </div>   
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                 <div class="form-group">
+                                                                        <label class="col-md-4 control-label">Policy End Date<span class="star">*</span></label>
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control datepicker-autoclose" placeholder="Policy End Date" readonly="readonly">
+                                                                        </div>
+                                                                 </div>   
+                                                            </div>
+                                                            
+                                                       </div>
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Model Year<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="year" class="form-control" id="year">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">2017</option>
+                                                        <option value="">2016</option>
+                                                        <option value="">2015</option>
+                                                        <option value="">2014</option>
+                                                        <option value="">2013</option>
+                                                        <option value="">2012</option>
+                                                        <option value="">2011</option>
+                                                        <option value="">2010</option>
+                                                        <option value="">2009</option>
+                                                        <option value="">2008</option>
+                                                        <option value="">2007</option>
+                                                        <option value="">2006</option>
+                                                        <option value="">2005</option>
+                                                        <option value="">2004</option>
+                                                        <option value="">2003</option>
+                                                        <option value="">2002</option>
+                                                        <option value="">2001</option>
+                                                        <option value="">2000</option>
+                                                        <option value="">1999</option>
+                                                        <option value="">1998</option>
+                                                        <option value="">1997</option>
+                                                        <option value="">1996</option>
+                                                        <option value="">1995</option>
+                                                        <option value="">1994</option>
+                                                        <option value="">1993</option>
+                                                        <option value="">1992</option>
+                                                        <option value="">1991</option>
+                                                        <option value="">1990</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                        <label class="col-md-4 control-label">Third Party Policy No</label>
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control" placeholder="Third Party Policy No">
+                                                                        </div>
+                                                                 </div>
+                                                            </div>
+                                                            
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Make<span class="star">*</span></label>
+                                                <div class="col-sm-8">
+                                                    <select data-placeholder="Make" class="form-control" id="make">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="ACURA">ACURA</option>
+                                                        <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                                        <option value="AUDI">AUDI</option>
+                                                        <option value="BENTLEY">BENTLEY</option>
+                                                        <option value="BMW">BMW</option>
+                                                        <option value="BUICK">BUICK</option>
+                                                        <option value="CADILLAC">CADILLAC</option>
+                                                        <option value="CHEVROLET">CHEVROLET</option>
+                                                        <option value="CHRYSLER">CHRYSLER</option>
+                                                        <option value="DATSUN">DATSUN</option>
+                                                        <option value="DODGE">DODGE</option>
+                                                        <option value="FERRARI">FERRARI</option>
+                                                        <option value="FORD">FORD</option>
+                                                        <option value="GENERAL MOTORS">GENERAL MOTORS</option>
+                                                        <option value="GMC">GMC</option>
+                                                        <option value="HONDA">HONDA</option>
+                                                        <option value="HUMMER">HUMMER</option>
+                                                        <option value="HYUNDAI">HYUNDAI</option>
+                                                        <option value="INFINITI">INFINITI</option>
+                                                        <option value="ISUZU">ISUZU</option>
+                                                        <option value="JAGUAR">JAGUAR</option>
+                                                        <option value="JEEP">JEEP</option>
+                                                        <option value="KIA">KIA</option>
+                                                        <option value="LAMBORGHINI">LAMBORGHINI</option>
+                                                        <option value="LAND ROVER">LAND ROVER</option>
+                                                        <option value="LEXUS">LEXUS</option>
+                                                        <option value="LINCOLN">LINCOLN</option>
+                                                        <option value="LOTUS">LOTUS</option>
+                                                        <option value="MAHINDRA & MAHINDRA">MAHINDRA & MAHINDRA</option>
+                                                        <option value="MARUTI">MARUTI</option>
+                                                        <option value="MASERATI">MASERATI</option>
+                                                        <option value="MAYBACH">MAYBACH</option>
+                                                        <option value="MAZDA">MAZDA</option>
+                                                        <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+                                                        <option value="MERCURY">MERCURY</option>
+                                                        <option value="MINI">MINI</option>
+                                                        <option value="MITSUBISHI">MITSUBISHI</option>
+                                                        <option value="NISSAN">NISSAN</option>
+                                                        <option value="PONTIAC">PONTIAC</option>
+                                                        <option value="PORSCHE">PORSCHE</option>
+                                                        <option value="RENAULT">RENAULT</option>
+                                                        <option value="ROLLS-ROYCE">ROLLS-ROYCE</option>
+                                                        <option value="SAAB">SAAB</option>
+                                                        <option value="SATURN">SATURN</option>
+                                                        <option value="SUBARU">SUBARU</option>
+                                                        <option value="SUZUKI">SUZUKI</option>
+                                                        <option value="TATA">TATA</option>
+                                                        <option value="TOYOTA">TOYOTA</option>
+                                                        <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                                        <option value="VOLVO">VOLVO</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Model<span class="star">*</span></label>
+                                                <div class="col-md-8">
+<select data-placeholder="model" class="form-control" id="model">
+	<option selected="selected">- select -</option>
+<option>Hyundai i10</option>
+<option>Maruti Wagon R</option>
+<option>Maruti Swift</option>
+<option>Hyundai Santro Xing</option>
+<option>Hyundai i20</option>
+<option>Hyundai Grand i10</option>
+<option>Maruti Alto</option>
+<option>Maruti Swift Dzire</option>
+<option>Honda City</option>
+<option>Ford Figo</option>
+<option>Honda Amaze</option>
+<option>Hyundai Eon</option>
+<option>Chevrolet Aveo</option>
+<option>Chevrolet Beat</option>
+<option>Chevrolet Cruze</option>
+<option>Chevrolet Optra</option>
+<option>Chevrolet Spark</option>
+<option>Fiat Grande Punto</option>
+<option>Fiat Linea</option>
+<option>Fiat Palio</option>
+<option>Ford Fiesta</option>
+<option>Ford Fusion</option>
+<option>Ford Ikon</option>
+<option>Honda Accord</option>
+<option>Honda Brio</option>
+<option>Honda New City</option>
+<option>Honda Civic</option>
+<option>Honda Jazz</option>
+<option>Hyundai Accent</option>
+<option>Hyundai Getz</option>
+<option>Audi Q7</option>
+<option>Volvo XC60</option>
+<option>Hyundai Santro</option>
+<option>Hyundai Verna</option>
+<option>Mahindra Bolero</option>
+<option>Mahindra Quanto</option>
+<option>Mahindra Scorpio</option>
+<option>Mahindra Xylo</option>
+<option>Renault Duster</option>
+<option>Mahindra Renault Logan</option>
+<option>Maruti 1000</option>
+<option>Maruti 800</option>
+<option>Maruti Baleno</option>
+<option>Maruti Eeco</option>
+<option>Maruti Ertiga</option>
+<option>Maruti Esteem</option>
+<option>Maruti Omni</option>
+<option>Maruti Ritz</option>
+<option>Maruti Zen Estilo</option>
+<option>Maruti Zen</option>
+<option>Nissan Micra</option>
+<option>Nissan Sunny</option>
+<option>Skoda Fabia</option>
+<option>Skoda Laura</option>
+<option>Skoda Octavia</option>
+<option>Skoda Superb</option>
+<option>Tata Indica</option>
+<option>Tata Indigo</option>
+<option>Tata Nano</option>
+<option>Toyota Corolla Altis</option>
+<option>Toyota Corolla</option>
+<option>Toyota Corsa</option>
+<option>Toyota Etios</option>
+<option>Toyota Etios Cross</option>
+<option>Toyota Etios Liva</option>
+<option>Toyota Innova</option>
+<option>Volkswagen Polo</option>
+<option>Volkswagen Vento</option>
+<option>Skoda Rapid</option>
+<option>Chevrolet Tavera</option>
+<option>Honda Mobilio</option>
+<option>BMW 5 Series</option>
+<option>Daewoo Matiz</option>
+<option>Renault Scala</option>
+<option>Tata Aria</option>
+<option>Tata Zest</option>
+<option>Chevrolet Enjoy</option>
+<option>Nissan Terrano</option>
+<option>Renault Pulse</option>
+<option>Tata Venture</option>
+<option>Tata Safari</option>
+<option>BMW 3 Series</option>
+<option>Audi Q3</option>
+<option>Ford Ecosport</option>
+<option>Audi A4</option>
+<option>Mitsubishi Lancer</option>
+<option>Maruti Ciaz</option>
+<option>Mahindra Verito</option>
+<option>Skoda Yeti</option>
+<option>Audi Q5</option>
+<option>Tata Bolt</option>
+<option>Nissan Evalia</option>
+<option>Maruti Celerio</option>
+<option>Renault Fluence</option>
+<option>Hyundai Elantra</option>
+<option>Hyundai Santa Fe</option>
+<option>Toyota Fortuner</option>
+<option>BMW 7 Series</option>
+<option>Toyota Qualis</option>
+<option>Chevrolet Sail</option>
+<option>Jaguar XF</option>
+<option>Tata Sumo Victa</option>
+<option>Mitsubishi Outlander</option>
+<option>Audi A6</option>
+<option>Tata Sumo Gold</option>
+<option>Opel Corsa</option>
+<option>Porsche Cayenne</option>
+<option>Mitsubishi Cedia</option>
+<option>Land Rover Range Rover</option>
+<option>Chevrolet Captiva</option>
+<option>Land Rover Freelander 2</option>
+<option>Suzuki MARUTI</option>
+<option>Hyundai Sonata</option>
+
+<option>Mitsubishi Pajero</option>
+<option>Hindustan Motors Ambassador</option>
+<option>Tata Indigo Marina</option>
+<option>Nissan Teana</option>
+<option>Hyundai Xcent</option>
+<option>Mercedes-Benz A Class</option>
+<option>Volkswagen Passat</option>
+<option>Volvo S60</option>
+<option>Maruti Versa</option>
+<option>Toyota Land Cruiser</option>
+<option>Premier Rio</option>
+<option>Mercedes-Benz GL Class</option>
+<option>Audi A3</option>
+<option>Chevrolet Tavera Neo 3</option>
+<option>Chevrolet Tavera Neo 2</option>
+<option>Volkswagen Vento GT</option>
+<option>Tata Indigo XL</option>
+<option>Hyundai Getz Prime</option>
+<option>Maruti A Star</option>
+<option>Chevrolet Optra Magnum</option>
+<option>Tata Indica V2 Xeta</option>
+<option>Tata Spacio</option>
+<option>Chevrolet Sail UVA</option>
+<option>Mercedes-Benz ML Class</option>
+<option>Maruti SX4</option>
+<option>Tata Safari Dicor</option>
+<option>Chevrolet Aveo UVA</option>
+<option>Maruti Alto 800</option>
+<option>Mahindra Ssangyong Rexton</option>
+<option>Tata Indigo CS</option>
+<option>Honda CRV</option>
+<option>Hyundai Fluidic Verna</option>
+<option>Chevrolet Optra SRV</option>
+<option>Tata Indigo Manza</option>
+<option>Mercedes-Benz CLA Class</option>
+<option>Mahindra Scorpio Mhawk</option>
+<option>Datsun Go</option>
+<option>Hyundai Tucson</option>
+<option>Ford Endeavour</option>
+<option>BMW X6 Series</option>
+<option>Hyundai Elite i20</option>
+<option>Volkswagen Jetta</option>
+<option>Land Rover Range Rover Evoque</option>
+<option>Honda City ZX</option>
+<option>Mercedes-Benz GLA Class</option>
+<option>Mercedes-Benz C Class</option>
+<option>Maruti Alto K10</option>
+<option>Jaguar XJ</option>
+<option>Tata Indica Vista</option>
+<option>Tata Sumo Grande</option>
+<option>BMW X3 Series</option>
+<option>Mercedes-Benz SLK Class</option>
+<option>Hyundai Elantra Fluidic</option>
+<option>Force Force One</option>
+<option>Isuzu MU7</option>
+<option>BMW X1 Series</option>
+<option>Tata Winger</option>
+<option>Mini Cooper S</option>
+<option>Mercedes-Benz E Class</option>
+<option>Maruti Wagon R Stingray</option>
+<option>Volkswagen Polo GT</option>
+<option>Mahindra Verito Vibe</option>
+<option>Mercedes-Benz S Class</option>
+<option>Tata Indica V2</option>
+<option>Nissan Micra New</option>
+<option>Nissan Micra Active</option>
+<option>Force Trax</option>
+<option>Volvo XC90</option>
+<option>Hyundai Excel</option>
+<option>Hyundai Grandeur</option>
+<option>Hyundai Terracan</option>
+<option>Hyundai Active i20</option>
+<option>Maruti Estilo</option>
+<option>Maruti Grand Vitara</option>
+<option>Maruti Gypsy</option>
+<option>Maruti Kizashi</option>
+<option>Toyota Alphard</option>
+<option>Toyota Aristo</option>
+<option>Toyota Celica</option>
+<option>Toyota Celsior</option>
+<option>Toyota Chaser</option>
+<option>Toyota Corona</option>
+<option>Toyota Cressida</option>
+<option>Toyota Crown</option>
+<option>Toyota Estima</option>
+<option>Toyota Grand Hiace</option>
+<option>Toyota Granivia</option>
+<option>Toyota Hiace</option>
+<option>Toyota Hilux Surf</option>
+<option>Toyota Land Cruiser 200</option>
+<option>Toyota Land Cruiser Prado</option>
+<option>Toyota Lexus</option>
+<option>Toyota Lucida</option>
+<option>Toyota Mark II</option>
+<option>Toyota MR - S</option>
+<option>Toyota Prado</option><option>Toyota Prius</option><option>Toyota Rav4</option><option>Toyota Runner</option><option>Toyota Sera</option><option>Toyota Sprinter Marino</option><option>Toyota Supra</option><option>Toyota Surf</option><option>Toyota Tracer</option><option>Toyota Vellfire</option><option>Toyota Ventury</option><option>Toyota Vista</option><option>Toyota Vitz</option><option>Toyota Voxi</option><option>Toyota Wagan Harrier</option><option>Honda Civic Hybrid</option><option>Honda Concerto</option><option>Honda Integra</option><option>Honda Odyssey</option><option>Mahindra Armada</option><option>Mahindra Axe 2700</option><option>Mahindra CJ 500</option><option>Mahindra CL 500</option><option>Mahindra Classic</option><option>Mahindra Commander</option><option>Mahindra Economy</option><option>Mahindra Festiva</option><option>Mahindra Forester</option><option>Mahindra Genio Dc</option><option>Mahindra Gio</option><option>Mahindra Legend</option><option>Mahindra Major</option><option>Mahindra Marshal</option><option>Mahindra Max Festara</option><option>Mahindra Maxx Festiva</option><option>Mahindra Maxx</option><option>Mahindra Maxximo</option><option>Mahindra MM 550</option><option>Mahindra Savari</option><option>Mahindra Thar</option><option>Mahindra Universal</option><option>Mahindra Voyager</option><option>Mahindra Willys</option><option>Mahindra Renault Logan Edge</option><option>Mahindra Renault Logan Tourer</option><option>Mahindra Reva E20</option><option>Mahindra Reva Model</option><option>Tata Ace</option><option>Tata Estate</option><option>Tata Indicab</option><option>Tata Magic Iris</option><option>Tata Mobile</option><option>Tata Movus</option><option>Tata Siera</option><option>Tata Sumo</option><option>Tata Super Ace</option><option>Tata Xenon</option><option>Audi A7</option><option>Audi A8</option><option>Audi C7</option><option>Audi R8</option><option>Audi RS5</option><option>Audi RS7</option><option>Audi S4</option><option>Audi S6</option><option>Audi TT Coupe</option><option>Ford Cortina</option><option>Ford Escort</option><option>Ford Focus</option><option>Ford Galaxy</option><option>Ford Janses</option><option>Ford Jeep</option><option>Ford Lincoln</option><option>Ford Metro Cab</option><option>Ford Mondeo</option><option>Ford Mustang</option><option>Ford Perfect</option><option>Ford Woody</option><option>BMW 1 Series</option><option>BMW 6 Series Convertible</option><option>BMW 6 Series Coupe</option><option>BMW 840 CI</option><option>BMW Gran Turismo</option><option>BMW M Models</option><option>BMW X5 Series</option><option>BMW X6 M</option><option>BMW Z3 Models</option><option>BMW Z4 Models</option><option>Mini Cooper Hatch</option><option>Mini Cooper Cabrio</option><option>Mini Cooper Convertible</option><option>Mini Cooper Countryman</option><option>Mini Cooper S Countryman</option><option>Mini Cooper Rover</option><option>Chevrolet Camaro</option><option>Chevrolet Convertible</option><option>Chevrolet Corvette</option><option>Chevrolet Forester</option><option>Chevrolet Kalos</option><option>Chevrolet Lacetti</option><option>Chevrolet Open Touring</option><option>Chevrolet Pontiac</option><option>Chevrolet SSR</option><option>Jeep Grand Cherokee</option><option>Hindustan Motors Contessa Classic</option><option>Hindustan Motors RTV</option><option>Hindustan Motors Trekker</option><option>Bentley Arnage</option><option>Bentley Azure</option><option>Bentley Azure T</option><option>Bentley Brooklands</option><option>Bentley Continental</option><option>Bentley Continental Flying Spur</option><option>Bentley Continental GT</option><option>Bentley Continental GTC</option><option>Bentley Continental Supersports</option><option>Bentley Flying Spur</option><option>Bentley Mulsanne</option><option>Bentley Turbo R</option><option>Mercedes-Benz 200D</option><option>Mercedes-Benz 240D</option><option>Mercedes-Benz 300D</option><option>Mercedes-Benz CLK Class</option><option>Mercedes-Benz CLS Class</option><option>Mercedes-Benz G Class</option><option>Mercedes-Benz MB100</option><option>Mercedes-Benz MB140</option><option>Mercedes-Benz R Class</option><option>Mercedes-Benz SL Class</option><option>Mercedes-Benz Viano</option><option>Fiat 1100</option><option>Fiat 500</option><option>Fiat Adira Mobile</option><option>Fiat Alfa Romeo</option><option>Fiat Avventura</option><option>Fiat Bravo</option><option>Fiat Cinquecento</option><option>Fiat CV 57L</option><option>Fiat Marea</option><option>Fiat Petra</option><option>Fiat Premier</option><option>Fiat Siena</option><option>Fiat Super</option><option>Fiat Uno</option><option>Jaguar Daimler</option><option>Jaguar F Type</option><option>Jaguar Mark IV</option><option>Jaguar Mark X</option><option>Jaguar Sovereign</option><option>Jaguar XK</option><option>Jaguar XKR</option><option>Jaguar XKR-S</option><option>Lamborghini Aventador</option><option>Lamborghini Gallardo</option><option>Lamborghini Murcielago LP 640</option><option>Hummer H2 SUV</option><option>Hummer H3 SUV</option><option>Isuzu Panther</option><option>Isuzu Trooper</option><option>Datsun Bluebird</option><option>Daewoo Cielo</option><option>Daewoo Nexia</option><option>Aston Martin DB9</option><option>Aston Martin DBS</option><option>Aston Martin Rapide</option><option>Aston Martin Vanquish</option><option>Aston Martin Vantage V8</option><option>Aston Martin Virage</option><option>Ferrari 458</option><option>Ferrari 599</option><option>Ferrari F149</option><option>Ferrari FF</option><option>Force Trip</option><option>Nissan 350Z</option><option>Nissan 370Z</option><option>Nissan Bluebird</option><option>Nissan Cefiro</option><option>Nissan GTR</option><option>Nissan Infiniti</option><option>Nissan March K12</option><option>Nissan Murano</option><option>Nissan Skyline</option><option>Nissan Urvan</option><option>Nissan X-Trail</option><option>Volkswagen Beetle</option><option>Volkswagen Phaeton</option><option>Volkswagen Polo Cross</option><option>Volkswagen Touareg</option><option>Volkswagen Type 2</option><option>Volkswagen Type 1300</option><option>Volkswagen VW 1500</option><option>Mitsubishi Challenger</option><option>Mitsubishi Delica</option><option>Mitsubishi FTO</option><option>Mitsubishi GTO</option><option>Mitsubishi Lancer Cedia</option><option>Mitsubishi Lancer Evolution</option><option>Mitsubishi Montero</option><option>Mitsubishi Shogun</option><option>Mitsubishi Sigme</option><option>Land Rover Dfender</option><option>Land Rover Discovery</option><option>Land Rover Discovery 3</option><option>Land Rover Discovery 4</option><option>Land Rover Range Rover Sport</option><option>Renault Koleos</option><option>Renault Megane Scenic</option><option>Opel Astra</option><option>Opel Corsa Sail</option><option>Opel Corsa Swing</option><option>Opel Vectra</option><option>Premier Padmini</option><option>Premier Peugeot</option><option>Premier Rio Plus</option><option>Premier Sigma</option><option>Rolls Royce 1938</option><option>Rolls Royce Ghost</option><option>Rolls Royce Phantom</option><option>Rolls Royce Silver</option><option>Rolls Royce Silver Seraph</option><option>Rolls Royce Wraith</option><option>Ssangyong MB100</option><option>Ssangyong Musso</option><option>Ssangyong Musso TD</option><option>Volvo S80</option><option>Volvo V40</option><option>Volvo XC70</option><option>BMW i8</option><option>Datsun Go Plus</option><option>Ferrari F12 Berlinetta</option><option>Ford Figo Aspire</option><option>Hyundai Creta</option><option>Lamborghini Huracan</option><option>Maruti S Cross</option><option>Renault Lodgy</option><option>Honda New Jazz</option><option>Tata Magic</option><option>Ford Classic</option><option>Ferrari 360</option><option>Mercedes-Benz GLE</option><option>Renault Kwid</option><option>Tata Safari Storme</option><option>Mahindra TUV 300</option><option>Chevrolet Trailblazer</option><option>Land Rover Freelander</option><option>Maybach 57</option><option>Maybach 62</option><option>Mahindra KUV 100</option><option>Fiat Punto</option><option>Fiat Abarth Punto</option><option>Audi RS6 Avant</option><option>Audi TT</option><option>Chevrolet Sail Sedan</option><option>Chevrolet Tavera Neo</option><option>Fiat Ducato Caravan</option><option>Fiat Linea Classic</option><option>Fiat Palio NV</option>
+<option>Fiat Siena Weekend</option>
+<option>Ford Fiesta Classic</option>
+<option>Hyundai Neo Fluidic Elantra</option>
+<option>Mahindra Renault Logan Edge Connect</option>
+<option>Mahindra Renault Logan Play</option>
+<option>Maruti Dzire</option>
+<option>Nissan GT-R</option>
+<option>Reva i</option>
+<option>Skoda Octavia Combi</option>
+<option>Tata Grande Dicor</option>
+<option>Tata Indica eV2</option>
+<option>Tata Indica eV2 Xeta</option>
+<option>Tata Indigo eCS</option>
+<option>Tata Manza Club Class</option>
+<option>Toyota Commuter</option>
+<option>Toyota Premio</option>
+<option>Toyota Previa</option>
+<option>Volkswagen 1600</option>
+<option>Volkswagen Caravelle</option>
+<option>Ford Falcon</option>
+<option>Mahindra XUV500</option>
+<option>Toyota Tercel</option>
+<option>Toyota Starlet</option>
+<option>Audi S5</option>
+<option>Fiat Punto Avventura</option>
+<option>Nissan Primera</option><option>Hyundai Sonata One</option>
+<option>Mahindra Scorpio Three</option>
+<option>Tata Indica V2 Turbo</option>
+<option>Mahindra Nuvo Sport</option>
+<option>Tata Tiago</option>
+<option>ICML Rhino RX</option>
+<option>Honda BR-V</option>
+<option>Porsche Macan</option>
+<option>Mahindra e-Verito</option>
+<option>Mercedes-Benz GLC Class</option>
+<option>Datsun Redi-GO</option>
+<option>Fiat Adventure</option>
+<option>Volkswagen Ameo</option>
+<option>Jaguar XE</option>
+<option>Mahindra Reva</option>
+<option>Maruti Vitara</option>
+<option>Isuzu D-Max</option><option>Land Rover Discovery Sport</option>
+<option>Mercedes-Benz GLS</option>
+<option>Aprilia SRV 850</option>
+<option>Maruti Ignis</option><option>Tata Hexa</option>
+<option>Royal Enfield Himalayan</option>
+<option>Suzuki Access 125</option>
+<option>Vespa VXL</option>
+<option>Victory Vegas</option>
+<option>Kawasaki Z250</option>
+<option>Tata Tigor</option>
+<option>Tata Manza</option>
+<option>Honda WRV</option>
+<option>Toyota Camry</option>
+<option>Mercedes-Benz B Class</option>
+</select>
+</div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Shape</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="Shape" class="form-control" id="shape">
+														<option selected="selected">- select -</option>
+   													</select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Color<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="Color" class="form-control" id="color">
+														<option selected="selected">- select -</option>
+   													</select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">KT No</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="KT No">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Chassis Number<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Chassis Number" maxlength="17">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Value of vehicle/Sum Insured<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Value of vehicle">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            
+                                                       </div>       
+                                                       
+                                                    
+                                                    <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Purpose<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="Purpose" class="form-control" id="purpose">
+														<option selected="selected">- select -</option>
+   													</select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">No. of Passengers<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="No. of Passengers">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>   
+                                                       
+                                                       
+                                                 <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Vehicle repair in<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="Vehicle repair in" class="form-control" id="repair">
+														<option selected="selected">- select -</option>
+   													</select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Spare parts<span class="star">*</span></label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="Spare parts" class="form-control" id="spare_parts">
+														<option selected="selected">- select -</option>
+   													</select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                   
+                                                   
+                                                   
+                                                   <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Annual Premium</label>
+                                                <div class="col-md-8">
+                                                    KD 2000.00
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+							</div>
+                            <input type="button" name="next" class="next button btn btn-lg btn-custom btn-block" value="Next" style="margin-left:530px;">
+</div>
+<div class="form">
+<div class="tab-pane" id="enrol_documents">      
+                            <div class="col-md-12">
+                                <div>
+                                    <h4 class="header-title m-t-0 m-b-20" style="color: #01704a;">Upload Documents</h4>                    					
+                                    <div class="col-xs-12">
+                                    	<div class="col-xs-6">
+                                        	<div class="row">
+                                        	<div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Civil ID</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div>
+                                          </div>  
+                                          
+                                          <div class="row">
+                                          <div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Registration book</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div>
+                                          </div>
+                                          
+                                          <div class="row">
+                                          <div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Driving License</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div> 
+                                          </div>         
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xs-6">
+                                        
+                                        	<div class="row">
+                                        	<div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Vehicle Image - 1</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div>  
+                                          </div>    
+                                          
+                                          <div class="row">
+                                          <div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Vehicle Image - 2</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div>
+                                          </div>
+                                          
+                                          <div class="row">
+                                          <div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Vehicle Image - 3</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div>
+                                          </div>
+                                          
+                                          <div class="row"> 
+                                          <div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Vehicle Image - 4</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div>
+                                          </div>
+                                          
+                                          <div class="row">
+                                          <div class="col-xs-12">
+                                            	<div class="form-group">
+                                                	<label class="col-md-3 control-label">Vehicle Image - 5</label>
+                                                    <div class="col-md-8">
+                                                       <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                                    </div>
+                                            	</div>
+                                          </div>  
+                                          </div>    
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12" style="margin:10px 0px 20px 0px;">
+                                <span class="star">Note:</span>&nbsp;&nbsp;Photos of vehicle should be from all four sides clearly showing vehicle Plate No. and Chassis No.
+                                </div>
+
+
+
+                            </div>
+                            </div>
+              
+              
+                                                       
+<input type="button" name="previous" class="previous button btn btn-lg btn-custom btn-block" value="Previous"  style="margin-left:480px;">
+<input type="button" name="next" class="next button btn btn-lg btn-custom btn-block" value="Next" style="margin-left:600px;margin-top:-50px;">
+</div>
+<div class="form">
+<div class="tab-pane" id="enrol_payment"> 
+                            <div class="col-md-12">
+                            <h4 class="header-title m-t-0 m-b-20" style="color: #01704a;">Additional covers available:</h4>
+                            	<div class="col-md-12">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Road side assistance service required @ KD 5</label>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Premium">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                    
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Replacement vehicle required for 15 days @ KD 35</label>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                    
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Personal accident cover @ KD 20</label>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                    
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Waiver of liability cover @ KD 15</label>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input type="checkbox" />
+                                                </div>
+                                            </div>
+                                    
+                                </div>
+                                
+                                
+                                <div class="col-md-12">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Policy fees</label>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Policy fees">
+                                                </div>
+                                                
+                                            </div>
+                                    
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Total annual premium</label>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Total annual premium">
+                                                </div>
+                                                
+                                            </div>
+                                    
+                                </div>
+                                
+                                <div class="col-md-12">
+                                    	<div class="form-group">
+                                                <input type="checkbox" />&nbsp;&nbsp;&nbsp;I hereby certify that the information provided above is true to the best of my knowledge. The insurance will not commence until this proposal has been accepted by the Company and the first premium paid.
+                                            </div>
+                                    
+                                </div>
+
+                                
+                            </div>
+                            
+                            </div>  
+<input type="button" name="previous" class="previous button btn btn-lg btn-custom btn-block" value="Previous" style="margin-left:480px;">
+<input type="button" name="next" class="button btn btn-lg btn-custom btn-block" value="Submit" style="margin-left:600px;margin-top:-50px;">
+<input type="button" name="next" class="button btn btn-lg btn-custom btn-block" value="Print Draft" style="margin-left:720px;margin-top:-50px;">                    
+</div>
+</div>
+
+                                                
+                                            </div>
+                                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HOME -->
+                    <!-- end container -->
+
+
+
+                    <div class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="pull-right hidden-xs">
+                                        <a href="#"><font color="#337ab7">Privacy Policy</font></a> <font color="#ffffff">|</font> <a href="#"><font color="#337ab7">Sitemap</font></a>
+                                    </div>
+                                    <div>
+                                        The Oriental Insurance Company Ltd. All rights reserved Insurance is the subject matter of solicitation. IRDA Reg. No. 556
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end footer -->
+
+                </div>
+                <!-- End #page-right-content -->
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- end .page-contentbar -->
+        </div>
+        <!-- End #page-wrapper -->
+
+
+
+         <!-- js placed at the end of the document so the pages load faster -->
+        <!--<script src="assets/js/jquery-2.1.4.min.js"></script>-->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        
+         <!-- Datatable js -->
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/jszip.min.js"></script>
+        <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.colVis.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedColumns.min.js"></script>
+        <!-- init -->
+        <script src="assets/pages/jquery.datatables.init.js"></script>
+
+        <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+        <script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+        <script src="assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/parsleyjs/parsley.min.js"></script>
+
+        <script src="assets/plugins/moment/moment.js"></script>
+     	
+        <script src="assets/plugins/summernote/summernote.min.js"></script>  
+
+        <!-- form advanced init js -->
+        <!--<script src="assets/pages/jquery.form-advanced.init.js"></script>-->
+
+        <!-- App Js -->
+        <script src="assets/js/jquery.app.js"></script>
+<script>
+$(document).ready(function(){
+    $.multistepform({
+        container:'multistepform-example-container',
+        form_method:'GET',
+    });
+	
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  
+  })  ();
+ $(document).ready(function() {
+jQuery('.datepicker-autoclose').datepicker({
+    autoclose: true,
+    todayHighlight: true
+}); 
+});
+ 
+
+</script>
+    </body>
+</html>
+

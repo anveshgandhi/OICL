@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="oiclApp">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Al Mulla Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons CSS -->
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- AngularJS Scripts -->
+    <script src="assets/js/angular/angular.js"></script>
+    <script src="assets/js/angular/angular-resource.js"></script>
+    <script src="assets/js/angular/angular-route.js"></script>
+    <script src="assets/js/angular/angular-animate.js"></script>
+    <script src="assets/js/angular/angular-messages.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/profile/profile.js"></script>
+</head>
+
+<body>
+
+    <div id="page-wrapper">
+
+        <!-- Top Bar Start -->
+        <div ng-include="'template/header.html'"></div>
+        <!-- Top Bar End -->
+
+
+        <!-- Page content start -->
+        <div class="page-contentbar">
+
+            <!-- START PAGE CONTENT -->
+            <div id="page-right-content">
+
+                <div class="container"><br><br>
+
+                    <div class="m-t-30">
+                        <ul class="nav nav-tabs tabs-bordered">
+                            <li class="active">
+                                <a href="#home-b1" data-toggle="tab" aria-expanded="true">
+                                        Profile
+                                    </a>
+                            </li>
+                            <li class="">
+                                <a href="#profile-b1" data-toggle="tab" aria-expanded="false">
+                                        Settings
+                                    </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home-b1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="p-0 text-center">
+                                                    <div class="member-card">
+                                                        <div class="thumb-xl member-thumb m-b-10 center-block">
+                                                            <img src="assets/images/users/mulla.jpg" class="img-circle img-thumbnail" alt="profile-image">
+                                                            <i class="mdi mdi-star-circle member-star text-success" title="verified user"></i>
+                                                        </div>
+
+                                                        <div class="">
+                                                            <h4 class="m-b-5">Abdulla Saleh Al Mulla</h4>
+                                                            <p class="text-muted">Secretary of State for Kuwait</p>
+                                                        </div>
+
+
+
+
+                                                        <!--<button type="button" class="btn btn-primary m-t-10">Follow</button>
+                                        <button type="button" class="btn btn-custom m-t-10">Message</button>-->
+
+                                                    </div>
+
+                                                </div>
+                                                <!-- end card-box -->
+
+                                            </div>
+                                            <!-- end col -->
+                                        </div>
+
+                                        <!-- Social -->
+                                        <div class="panel panel-default panel-fill">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">Social</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <ul class="social-links list-inline m-b-0">
+                                                    <li>
+                                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" data-original-title="Skype"><i class="fa fa-skype"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- Social -->
+                                    </div>
+
+
+                                    <div class="col-md-8">
+                                        <!-- Personal-Information -->
+                                        <div class="panel panel-default panel-fill">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">Personal Information</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="m-b-20">
+                                                    <p class="text-muted"><strong>Full Name:&nbsp;&nbsp;</strong>Abdulla Saleh Al Mulla</p>
+                                                </div>
+                                                <div class="m-b-20">
+                                                    <p class="text-muted"><strong>Mobile:&nbsp;&nbsp;</strong>(123) 123 1234</p>
+                                                </div>
+                                                <div class="m-b-20">
+                                                    <p class="text-muted"><strong>Email:&nbsp;&nbsp;</strong><a href="mailto:abdulla@almullagroup.com">abdulla@almullagroup.com</a></p>
+                                                </div>
+                                                <div class="m-b-20">
+                                                    <p class="text-muted"><strong>User ID:&nbsp;&nbsp;</strong>12358</p>
+                                                </div>
+                                                <div class="about-info-p m-b-0">
+                                                    <p class="text-muted"><strong>Location:&nbsp;&nbsp;</strong>Kuwait</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Personal-Information -->
+                                        <!-- Personal-Information -->
+                                        <div class="panel panel-default panel-fill">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">Biography</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <!--<h5 class="header-title text-uppercase">About Us</h5>-->
+                                                <p>Al Mulla Group is a leading diversified privately held business group based
+                                                    in the State of Kuwait. With over 15,000 employees, over 40 different
+                                                    Group companies and subsidiaries.</p>
+                                                <p>Al Mulla Group is a leading diversified privately held business group based
+                                                    in the State of Kuwait. With over 15,000 employees, over 40 different
+                                                    Group companies and subsidiaries, operating in 8 different countries
+                                                    and affiliations.s</p>
+
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- Personal-Information -->
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile-b1">
+                                <!-- Personal-Information -->
+                                <div class="panel panel-default panel-fill">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Edit Profile</h3>
+                                    </div>
+                                    <div class="panel-body" ng-controller="ProfileController as profile">
+                                        <form name="profileform" method="POST" role="form" ng-submit="profile.profileValidate(profileform.$valid,profile.profileModel);" class="profile_update" novalidate>
+
+                                            <div class="col-md-12">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Full Name</label>
+                                                        <div class="col-md-8">
+                                                            <input type="text" value="Abdulla Saleh Al Mulla" name="FullName" class="form-control" ng-model="profile.profileModel.name" required>
+                                                            <p class="alert-danger" ng-show="(profileform.FullName.$error.required && profile.isSubmitted) || (profileform.FullName.$touched && profileform.FullName.$error.required) ">Full name is Mandatory.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Email</label>
+                                                        <div class="col-md-8">
+                                                            <input type="email" value="abdulla@almullagroup.com" id="Email" class="form-control" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">New Password</label>
+                                                        <div class="col-md-8">
+                                                            <input type="password" placeholder="6 - 15 Characters" id="newPassword" name="newPassword" class="form-control" ng-model="profile.profileModel.newPassword" required ng-minlength="8" ng-maxlength="16" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/">
+                                                            <p class="alert-danger" ng-show="(profileform.newPassword.$error.required && profile.isSubmitted) || (profileform.newPassword.$touched && profileform.newPassword.$error.required) ">Password is Mandatory.</p>
+                                                            <p class="alert-danger" ng-show="(profileform.newPassword.$error.minlength && profile.isSubmitted) || (profileform.newPassword.$touched && profileform.newPassword.$error.minlength) ">Password must be at least 8 Characters long.</p>
+                                                            <p class="alert-danger" ng-show="(profileform.newPassword.$error.maxlength && profile.isSubmitted) || (profileform.newPassword.$touched && profileform.newPassword.$error.maxlength) ">Password cannot be more than 16 characters long.</p>
+                                                            <p class="alert-danger" ng-show="(profileform.newPassword.$error.pattern && profile.isSubmitted) || (profileform.newPassword.$touched && profileform.newPassword.$error.pattern) ">Invalid Password Format</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Confirm Password</label>
+                                                        <div class="col-md-8">
+                                                            <input type="password" placeholder="6 - 15 Characters" id="confirmPassword" name="confirmPassword" class="form-control" ng-model="profile.profileModel.confirmPassword" required ng-minlength="8" ng-maxlength="16" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/">
+                                                            <p class="alert-danger" ng-show="(profileform.confirmPassword.$error.required && profile.isSubmitted) || (profileform.confirmPassword.$touched && profileform.confirmPassword.$error.required) ">Password is Mandatory.</p>
+                                                            <p class="alert-danger" ng-show="(profileform.confirmPassword.$error.minlength && profile.isSubmitted) || (profileform.confirmPassword.$touched && profileform.confirmPassword.$error.minlength) ">Password must be at least 8 Characters long.</p>
+                                                            <p class="alert-danger" ng-show="(profileform.confirmPassword.$error.maxlength && profile.isSubmitted) || (profileform.confirmPassword.$touched && profileform.confirmPassword.$error.maxlength) ">Password cannot be more than 16 characters long.</p>
+                                                            <p class="alert-danger" ng-show="(profileform.confirmPassword.$error.pattern && profile.isSubmitted) || (profileform.confirmPassword.$touched && profileform.confirmPassword.$error.pattern) ">Invalid Password Format</p>
+                                                            <p class="alert-danger" ng-show="profileform.confirmPassword.$touched && (profileform.newPassword.$viewValue != profileform.confirmPassword.$viewValue)">New password and Confirm password must be same</p>
+                                                            <!--<p class="alert-danger" ng-show="(newPassword.$viewValue !== confirmPassword.$viewValue) ">Password Mismatched</p>-->
+                                                        </div>
+                                                        <!--<span ng-show="newPassword !== confirmPassword">Password mismatch</span>-->
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">About Me</label>
+                                                        <div class="col-md-8">
+                                                            <textarea style="height: 125px" id="AboutMe" class="form-control">Al Mulla Group is a leading diversified privately held business group based in the State of Kuwait. With over 15,000 employees, over 40 different Group companies and subsidiaries, operating in 8 different countries.</textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Phone</label>
+                                                        <div class="col-md-8">
+                                                            <input type="email" value="+965 22002233" id="Email" class="form-control" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label"></label>
+                                                        <div class="col-md-8">
+                                                            <button class="btn btn-primary waves-effect waves-light w-md" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                                <!-- Personal-Information -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end container -->
+                <div ng-include="'template/footer.html'"></div>
+                <!-- end footer -->
+
+            </div>
+            <!-- End #page-right-content -->
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- end .page-contentbar -->
+    </div>
+    <!-- End #page-wrapper -->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- App Js -->
+    <script src="assets/js/jquery.app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="oiclApp">
+    <head>
+        <title>The Oriental Insurance Company</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="The Oriental Insurance Company Ltd was a wholly owned subsidiary of the Oriental Government Security Life Assurance Company Ltd and was formed to carry out General Insurance business. The company has developed various types of insurance covers to cater to the needs of both the urban and rural population of India." lang="en-US" name="description" />
+		<meta name="description" content="The Oriental Insurance Company">
+		<meta name="keywords" content="The Oriental Insurance Company" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!--Morris Chart CSS -->
+		<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icons CSS -->
+        <link href="assets/css/icons.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- AngularJS Scripts -->
+        <script src="assets/js/angular/angular.js"></script>
+
+        <script src="assets/js/angular/angular-resource.js"></script>
+
+        <script src="assets/js/angular/angular-route.js"></script>
+
+        <script src="assets/js/angular/angular-animate.js"></script>
+
+        <script src="assets/js/angular/angular-messages.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/register/Register.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <div id="page-wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar" id="topnav">
+
+                <!-- Top navbar -->
+                 <!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- Page content start -->
+            <div class="page-contentbar">
+
+                <!-- START PAGE CONTENT -->
+                <div id="page-right-content" style="background-image: url(resource/img/bg_login.png);background-position:center;">
+
+                    <!-- HOME -->
+      <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                         <div class="wrapper-page login_form" style="background-image: url(resource/img/bg_login_form.png);background-position:center;background-repeat:">
+
+                            <div class="m-t-40 card-box">
+                                <div class="text-center">
+                                    <h2 class="text-uppercase m-t-0 m-b-30">
+                                        <a href="index.html" class="text-success">
+                                            <span><img src="assets/images/logo_dark.png" alt=""></span>
+                                        </a>
+                                    </h2>
+                                    <!--<h4 class="text-uppercase font-bold m-b-0">Sign In</h4>-->
+                                </div>
+                                <div class="account-content" ng-controller="RegisterController as register">
+                                    <form class="form-horizontal" name="registerform" method="post" ng-submit="register.registerValidate(registerform.$valid,register.registerModel)" novalidate>
+
+                                        <div class="form-group m-b-20">
+                                            <div class="col-xs-12">
+                                                <input class="form-control" type="text" id="userid" name="userid" ng-required="true" placeholder="User ID (Civil ID)" ng-model="register.registerModel.userID" ng-minlength="12" ng-maxlength="12">
+                                                <p class="alert-danger" ng-show="(registerform.userid.$error.required && register.isSubmitted) || (registerform.userid.$touched && registerform.userid.$error.required) ">User ID is Mandatory.</p>
+                                                <p class="alert-danger" ng-show="(registerform.userid.$error.minlength && register.isSubmitted) || (registerform.userid.$touched && registerform.userid.$error.minlength) ">Civil ID is too short.</p>
+                                                <p class="alert-danger" ng-show="(registerform.userid.$error.maxlength && register.isSubmitted) || (registerform.userid.$touched && registerform.userid.$error.maxlength) ">Civil ID is too long.</p>
+                                                <p class="alert-danger" ng-show="(register.isCivilIDValid)">Invalid Civil ID.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group m-b-20">
+                                            <div class="col-xs-12">
+                                                <input class="form-control" type="text" id="username" name="username" ng-required="true" placeholder="Name" ng-model="register.registerModel.username">
+                                                <p class="alert-danger" ng-show="(registerform.username.$error.required && register.isSubmitted) || (registerform.username.$touched && registerform.username.$error.required) ">User Name is Mandatory.</p>
+                                            </div>
+                                        </div>
+
+                                       <div class="form-group m-b-20">
+                                            <div class="col-xs-12">
+                                                <input class="form-control" type="password" id="newPassword" name="newPassword" ng-model="register.registerModel.newPassword" placeholder="Password" ng-minlength="8" ng-maxlength="16" required ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/">
+                                                <p class="alert-danger" ng-show="(registerform.newPassword.$error.required && register.isSubmitted) || (registerform.newPassword.$touched && registerform.newPassword.$error.required) ">Password is Mandatory.</p>
+                                                <p class="alert-danger" ng-show="(registerform.newPassword.$error.minlength && register.isSubmitted) || (registerform.newPassword.$touched && registerform.newPassword.$error.minlength) ">Password must be at least 8 Characters long.</p>
+                                                <p class="alert-danger" ng-show="(registerform.newPassword.$error.maxlength && register.isSubmitted) || (registerform.newPassword.$touched && registerform.newPassword.$error.maxlength) ">Password cannot be more than 16 characters long.</p>
+                                                <p class="alert-danger" ng-show="(registerform.newPassword.$error.pattern && register.isSubmitted) || (registerform.newPassword.$touched && registerform.newPassword.$error.pattern) ">Invalid Password Format</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-20">
+                                            <div class="col-xs-12">                                                
+                                                <input class="form-control" type="password" id="confirmPassword" name="confirmPassword" ng-model="register.registerModel.confirmPassword" placeholder="Retype Password" ng-minlength="8" ng-maxlength="16" required ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/">
+                                                <p class="alert-danger" ng-show="(registerform.confirmPassword.$error.required && profile.isSubmitted) || (registerform.confirmPassword.$touched && registerform.confirmPassword.$error.required) ">Password is Mandatory.</p>
+                                                <p class="alert-danger" ng-show="(registerform.confirmPassword.$error.minlength && profile.isSubmitted) || (registerform.confirmPassword.$touched && registerform.confirmPassword.$error.minlength) ">Password must be at least 8 Characters long.</p>
+                                                <p class="alert-danger" ng-show="(registerform.confirmPassword.$error.maxlength && profile.isSubmitted) || (registerform.confirmPassword.$touched && registerform.confirmPassword.$error.maxlength) ">Password cannot be more than 16 characters long.</p>
+                                                <p class="alert-danger" ng-show="(registerform.confirmPassword.$error.pattern && profile.isSubmitted) || (registerform.confirmPassword.$touched && registerform.confirmPassword.$error.pattern) ">Invalid Password Format</p>
+                                                <p class="alert-danger" ng-show="registerform.confirmPassword.$touched && (registerform.newPassword.$viewValue != registerform.confirmPassword.$viewValue)">New password and Confirm password must be same</p>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="form-group m-b-20">
+                                            <div class="col-xs-12">
+                                                <input class="form-control" type="number" id="mobilenumber" name="mobilenumber" ng-required="true" placeholder="Mobile Number" ng-model="register.registerModel.mobilenumber" ng-pattern="/^[7-9][0-9]{9}$/">
+                                                <p class="alert-danger" ng-show="(registerform.mobilenumber.$error.required && register.isSubmitted) || (registerform.mobilenumber.$touched && registerform.mobilenumber.$error.required) ">Mobile Number is Mandatory.</p>
+                                                <p class="alert-danger" ng-show="(registerform.mobilenumber.$error.pattern && register.isSubmitted) || (registerform.mobilenumber.$touched && registerform.mobilenumber.$error.pattern) ">Invalid Mobile Number.</p>
+                                            </div>
+                                        </div>
+
+                                        <span style="float: right;"><b><a href="#" style="color:#FFF;">Request OTP</a></b></span>
+                                        <div class="form-group m-b-20">
+                                            <div class="col-xs-12">
+                                                <input class="form-control" type="email" id="otp" name="otp" required placeholder="Enter OTP received to your mobile" ng-model="register.registerModel.otp">
+                                                <p class="alert-danger" ng-show="(registerform.otp.$error.required && register.isSubmitted) || (registerform.otp.$touched && registerform.otp.$error.required) ">Cannot proceed without OTP</p>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="form-group m-b-20">
+                                            <div class="col-xs-12">
+                                                <input class="form-control" type="email" id="emailaddress" name="emailaddress" ng-required="true" placeholder="Email" ng-model="register.registerModel.emailaddress">
+                                                    <p class="alert-danger" ng-show="(registerform.emailaddress.$error.required && register.isSubmitted) || (registerform.emailaddress.$touched && registerform.emailaddress.$error.required) ">Email ID is Mandatory.</p>
+                                                    <p class="alert-danger" ng-show="(registerform.emailaddress.$error.email && register.isSubmitted) || (registerform.emailaddress.$touched && registerform.emailaddress.$error.email) ">Invalid Email ID.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group m-b-20">
+                                            <div class="col-xs-12">
+                                            <textarea name="address" class="form-control" id="address" placeholder="Address" ng-required="true" ng-model="register.registerModel.address"></textarea>
+                                               <p class="alert-danger" ng-show="(registerform.address.$error.required && register.isSubmitted) || (registerform.address.$touched && registerform.address.$error.required) ">Address is Mandatory.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-b-30">
+                                            <div class="col-xs-12">
+                                                <div class="checkbox checkbox-primary">
+                                                    <input id="checkbox5" type="checkbox" ng-required="value.length==0" name="termsAndConditions" ng-model="register.registerModel.termsAndConditions">
+                                                    <label for="checkbox5">
+                                                        I accept <a href="terms_conditions.html">Terms and Conditions</a>
+                                                    </label>
+                                                    <p class="alert-danger" ng-show="(registerform.termsAndConditions.$error.required && submitted == true)">Please select the checkbox to proceed.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group account-btn text-center m-t-10">
+                                            <div class="col-xs-12">
+                                                <!--<button class="btn" type="submit" ng-disabled="registerform.$invalid" ng-click="ng-click="submitted = true"">Register as Direct User</button>-->
+                                                <button class="btn" type="submit" ng-disabled="registerform.$invalid">Register as Direct User</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                    
+<div class="row m-t-50">
+                                <div class="col-sm-12 text-center" style="margin-top:10px;">
+                                    <p class="text-muted">Already have an account?  <a href="login.html" class="text-dark m-l-5">Sign In</a></p>
+                                </div>
+                            </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <!-- end card-box-->
+                        </div>
+                        <!-- end wrapper -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HOME -->
+                    <!-- end container -->
+                    <div ng-include="'template/footer.html'"></div>
+                    <!-- end footer -->
+
+                </div>
+                <!-- End #page-right-content -->
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- end .page-contentbar -->
+        </div>
+        <!-- End #page-wrapper -->
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        <!--Morris Chart-->
+		<script src="assets/plugins/morris/morris.min.js"></script>
+		<script src="assets/plugins/raphael/raphael-min.js"></script>
+        <!-- Dashboard init -->
+		<script src="assets/pages/jquery.dashboard.js"></script>
+        <!-- App Js -->
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+</html>

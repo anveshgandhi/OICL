@@ -1,0 +1,2378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <title>The Oriental Insurance Company</title>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="The Oriental Insurance Company Ltd was a wholly owned subsidiary of the Oriental Government Security Life Assurance Company Ltd and was formed to carry out General Insurance business. The company has developed various types of insurance covers to cater to the needs of both the urban and rural population of India." lang="en-US" name="description" />
+		<meta name="description" content="The Oriental Insurance Company">
+		<meta name="keywords" content="The Oriental Insurance Company" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">        
+        <!-- DataTables -->
+        <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/dataTables.colVis.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/fixedColumns.dataTables.min.css" rel="stylesheet" type="text/css"/>       
+		
+        <!-- Plugins css-->
+        <link href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/plugins/switchery/switchery.min.css">
+        <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+		<link href="assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+		<link href="assets/plugins/clockpicker/css/bootstrap-clockpicker.min.css" rel="stylesheet">
+        <!-- Summernote css -->
+        <link href="assets/plugins/summernote/summernote.css" rel="stylesheet" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icons CSS -->
+        <link href="assets/css/icons.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <script>
+			function displayDate() {
+				var now = new Date();			
+				var day = ("0" + now.getDate()).slice(-2);
+				var month = ("0" + (now.getMonth() + 1)).slice(-2);
+				var today = now.getFullYear() + "-" + (month) + "-" + (day);			
+				document.getElementById("fname").value = today;
+				document.getElementById("fname1").value = today;
+			}
+		</script>
+		
+    </head>
+
+    <body onload="displayDate()">
+        <div id="page-wrapper">
+            <!-- Top Bar Start -->
+            <div class="topbar" id="topnav">
+                <!-- Top navbar -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+
+                            <!-- LOGO -->
+                            <div class="topbar-left">
+                                <div class="">
+                                    <a href="index.html" class="logo">
+                                        <img src="assets/images/logo.png" alt="logo" class="logo-lg" />
+                                        <img src="assets/images/logo_sm.png" alt="logo" class="logo-sm hidden" />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="navbar-custom navbar-left">
+                                <div id="navigation">
+                                    <!-- Navigation Menu-->
+                                    <ul class="navigation-menu">                                       
+                                        <li class="has-submenu">
+                                            <a href="#"> <span><i class="fa fa-unlock-alt"></i></span><span> Login </span></a>
+                                            <ul class="submenu">
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="register.html">Register as Direct User</a></li>
+                                                <li><a href="broker.html">Register as Broker User</a></li>
+                                                <li><a href="forgotpassword.html">Forgot Password</a></li>
+                                                <li><a href="changemobile.html">Change Mobile No</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has-submenu">
+                                            <a href="#"><span><i class="fa fa-certificate"></i></span><span> Policy Services </span></a>
+                                            <ul class="submenu">
+                                            	<li><a href="userpage.html">User Home Page</a></li>
+                                                <li><a href="userpage.html">Enrol Policy</a></li>
+                                                <li><a href="userpage.html">Renew Policy</a></li>
+                                                <li><a href="userpage.html">Policy Details</a></li>
+                                            </ul>
+                                        </li>                                       
+
+                                    </ul>
+                                    <!-- End navigation menu  -->
+                                </div>
+                            </div>
+
+                            <!-- Top nav Right menu -->
+                            <ul class="nav navbar-nav navbar-right top-navbar-items-right pull-right">
+                                <li class="top-menu-item-xs">
+                                    <!-- Mobile menu toggle-->
+                                    <a class="navbar-toggle">
+                                        <div class="lines">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </a>
+                                    <!-- End mobile menu toggle-->
+                                </li>
+                                <li class="hidden-xs">
+                                    <form role="search" class="navbar-left app-search pull-left">
+                                         <input type="text" placeholder="Search..." class="form-control">
+                                         <a href=""><i class="fa fa-search"></i></a>
+                                    </form>
+                                </li>
+                                <li class="dropdown top-menu-item-xs">
+                                    
+                                    <ul class="dropdown-menu p-0 dropdown-menu-lg">
+                                        <!--<li class="notifi-title"><span class="label label-default pull-right">New 3</span>Notification</li>-->
+                                        <li class="list-group notification-list" style="height: 267px;">
+                                           <div class="slimscroll">
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-diamond bg-primary"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">A new order has been placed A new order has been placed</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-cog bg-warning"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">New settings</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-bell-o bg-custom"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">Updates</h5>
+                                                        <p class="m-0">
+                                                            <small>There are <span class="text-primary font-600">2</span> new updates available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-user-plus bg-danger"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">New user registered</h5>
+                                                        <p class="m-0">
+                                                            <small>You have 10 unread messages</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                                <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-diamond bg-primary"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">A new order has been placed A new order has been placed</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+
+                                               <!-- list item-->
+                                               <a href="javascript:void(0);" class="list-group-item">
+                                                  <div class="media">
+                                                     <div class="media-left p-r-10">
+                                                        <em class="fa fa-cog bg-warning"></em>
+                                                     </div>
+                                                     <div class="media-body">
+                                                        <h5 class="media-heading">New settings</h5>
+                                                        <p class="m-0">
+                                                            <small>There are new settings available</small>
+                                                        </p>
+                                                     </div>
+                                                  </div>
+                                               </a>
+                                           </div>
+                                        </li>
+                                        <!--<li>-->
+                                            <!--<a href="javascript:void(0);" class="list-group-item text-right">-->
+                                                <!--<small class="font-600">See all notifications</small>-->
+                                            <!--</a>-->
+                                        <!--</li>-->
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown top-menu-item-xs">
+                                    <a href="" class="dropdown-toggle menu-right-item profile" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/mulla.jpg" alt="user-img" class="img-circle"> </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="profile.html"><i class="ti-user m-r-10"></i> Profile</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="login.html"><i class="ti-power-off m-r-10"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!-- end container -->
+                </div> <!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- Page content start -->
+            <div class="page-contentbar">
+
+                <!-- START PAGE CONTENT -->
+                <div id="page-right-content1">
+
+                    <!-- HOME -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+					<div >
+                                            <div class="card-box">
+                                            	<h4 class="header-title m-t-0 m-b-20" style="margin-top: -10px; color:#01704a;">Policy Details</h4>
+                                                <p>Request for a New Policy, Renew or View Enrolled Policies.</p><br>
+												
+                                                <ul class="nav nav-tabs navtab-bg nav-justified">
+                                                    <li class="active">
+                                                        <a href="#enrol" name="#enrol" data-toggle="tab" aria-expanded="true">
+                                                            <span class="visible-xs"><i class="fa fa-home"></i></span>
+                                                            <span class="hidden-xs">New Policy Request</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#renew" name="#renew" data-toggle="tab" aria-expanded="true">
+                                                            <span class="visible-xs"><i class="fa fa-user"></i></span>
+                                                            <span class="hidden-xs">Policy Renewal Request</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#details" name="#details" data-toggle="tab" aria-expanded="true">
+                                                            <span class="visible-xs"><i class="fa fa-envelope-o"></i></span>
+                                                           <span class="hidden-xs">View Enrolled Policy Details</span>
+                                                        </a>
+                                                    </li>                                                    
+                                                </ul>
+                                                
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="enrol"><br>
+                                                    
+                                                    <ul class="nav nav-tabs navtab-bg nav-justified">
+                                                    <li class="active">
+                                                        <a href="#enrol_details" name="#enrol_details" data-toggle="tab" aria-expanded="true">
+                                                            <span class="visible-xs"><i class="fa fa-home"></i></span>
+                                                            <span class="hidden-xs">Details</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#enrol_documents" name="#enrol_documents" data-toggle="tab" aria-expanded="true">
+                                                            <span class="visible-xs"><i class="fa fa-user"></i></span>
+                                                            <span class="hidden-xs">Upload Documents</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="#enrol_payment" name="#enrol_payment" data-toggle="tab" aria-expanded="true">
+                                                            <span class="visible-xs"><i class="fa fa-envelope-o"></i></span>
+                                                           <span class="hidden-xs">Payments</span>
+                                                        </a>
+                                                    </li>                                                    
+                                                </ul>
+                                                
+                                                      <form name="new_policy" class="oic_form">  
+                                                        <div class="row"> <!-- row start -->
+                                                   <div class="tab-pane active" id="enrol_details">    
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                                        <label class="col-md-4 control-label">ID Number</label>
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control" placeholder="ID Number">
+                                                                        </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control-label">Req Seq No</label>
+                                                                    <div class="col-md-8">
+                                                                        <input type="text" class="form-control" placeholder="Req Seq No">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                       </div> 
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                    <label class="col-md-4 control-label">Policy Type</label>
+                                                                    <div class="col-md-8">
+                                                                       <select data-placeholder="type" class="form-control" id="type">
+                                                                            <option selected="selected">- select -</option>
+                                                                            <option value="">Liability Coverage</option>
+                                                                            <option value="">Collision Coverage</option>
+                                                                            <option value="">Comprehensive Coverage</option>
+                                                                            <option value="">Uninsured/Underinsured Motorist Coverage</option>
+                                                                            <option value="">Medical Payments</option>
+                                                                            <option value="">Personal Injury Protection</option>
+                                                                       </select>
+                                                                    </div>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Policy Duration</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="duration" class="form-control" id="duration">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="1">1 year</option>
+                                                        <option value="2">2 years</option>
+                                                        <option value="3">3 years</option>
+                                                        <option value="4">4 years</option>
+                                                        <option value="5">5 years</option>
+                                                        <option value="6">6 years</option>
+                                                        <option value="7">7 years</option>
+                                                        <option value="8">8 years</option>
+                                                        <option value="9">9 years</option>
+                                                        <option value="10">10 years</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Vehicle Make</label>
+                                                <div class="col-sm-8">
+                                                    <select data-placeholder="Make" class="form-control" id="make">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="ACURA">ACURA</option>
+                                                        <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                                        <option value="AUDI">AUDI</option>
+                                                        <option value="BENTLEY">BENTLEY</option>
+                                                        <option value="BMW">BMW</option>
+                                                        <option value="BUICK">BUICK</option>
+                                                        <option value="CADILLAC">CADILLAC</option>
+                                                        <option value="CHEVROLET">CHEVROLET</option>
+                                                        <option value="CHRYSLER">CHRYSLER</option>
+                                                        <option value="DATSUN">DATSUN</option>
+                                                        <option value="DODGE">DODGE</option>
+                                                        <option value="FERRARI">FERRARI</option>
+                                                        <option value="FORD">FORD</option>
+                                                        <option value="GENERAL MOTORS">GENERAL MOTORS</option>
+                                                        <option value="GMC">GMC</option>
+                                                        <option value="HONDA">HONDA</option>
+                                                        <option value="HUMMER">HUMMER</option>
+                                                        <option value="HYUNDAI">HYUNDAI</option>
+                                                        <option value="INFINITI">INFINITI</option>
+                                                        <option value="ISUZU">ISUZU</option>
+                                                        <option value="JAGUAR">JAGUAR</option>
+                                                        <option value="JEEP">JEEP</option>
+                                                        <option value="KIA">KIA</option>
+                                                        <option value="LAMBORGHINI">LAMBORGHINI</option>
+                                                        <option value="LAND ROVER">LAND ROVER</option>
+                                                        <option value="LEXUS">LEXUS</option>
+                                                        <option value="LINCOLN">LINCOLN</option>
+                                                        <option value="LOTUS">LOTUS</option>
+                                                        <option value="MAHINDRA & MAHINDRA">MAHINDRA & MAHINDRA</option>
+                                                        <option value="MARUTI">MARUTI</option>
+                                                        <option value="MASERATI">MASERATI</option>
+                                                        <option value="MAYBACH">MAYBACH</option>
+                                                        <option value="MAZDA">MAZDA</option>
+                                                        <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+                                                        <option value="MERCURY">MERCURY</option>
+                                                        <option value="MINI">MINI</option>
+                                                        <option value="MITSUBISHI">MITSUBISHI</option>
+                                                        <option value="NISSAN">NISSAN</option>
+                                                        <option value="PONTIAC">PONTIAC</option>
+                                                        <option value="PORSCHE">PORSCHE</option>
+                                                        <option value="RENAULT">RENAULT</option>
+                                                        <option value="ROLLS-ROYCE">ROLLS-ROYCE</option>
+                                                        <option value="SAAB">SAAB</option>
+                                                        <option value="SATURN">SATURN</option>
+                                                        <option value="SUBARU">SUBARU</option>
+                                                        <option value="SUZUKI">SUZUKI</option>
+                                                        <option value="TATA">TATA</option>
+                                                        <option value="TOYOTA">TOYOTA</option>
+                                                        <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                                        <option value="VOLVO">VOLVO</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Vehicle Model</label>
+                                                <div class="col-md-8">
+<select data-placeholder="model" class="form-control" id="model">
+	<option selected="selected">- select -</option>
+<option>Hyundai i10</option>
+<option>Maruti Wagon R</option>
+<option>Maruti Swift</option>
+<option>Hyundai Santro Xing</option>
+<option>Hyundai i20</option>
+<option>Hyundai Grand i10</option>
+<option>Maruti Alto</option>
+<option>Maruti Swift Dzire</option>
+<option>Honda City</option>
+<option>Ford Figo</option>
+<option>Honda Amaze</option>
+<option>Hyundai Eon</option>
+<option>Chevrolet Aveo</option>
+<option>Chevrolet Beat</option>
+<option>Chevrolet Cruze</option>
+<option>Chevrolet Optra</option>
+<option>Chevrolet Spark</option>
+<option>Fiat Grande Punto</option>
+<option>Fiat Linea</option>
+<option>Fiat Palio</option>
+<option>Ford Fiesta</option>
+<option>Ford Fusion</option>
+<option>Ford Ikon</option>
+<option>Honda Accord</option>
+<option>Honda Brio</option>
+<option>Honda New City</option>
+<option>Honda Civic</option>
+<option>Honda Jazz</option>
+<option>Hyundai Accent</option>
+<option>Hyundai Getz</option>
+<option>Audi Q7</option>
+<option>Volvo XC60</option>
+<option>Hyundai Santro</option>
+<option>Hyundai Verna</option>
+<option>Mahindra Bolero</option>
+<option>Mahindra Quanto</option>
+<option>Mahindra Scorpio</option>
+<option>Mahindra Xylo</option>
+<option>Renault Duster</option>
+<option>Mahindra Renault Logan</option>
+<option>Maruti 1000</option>
+<option>Maruti 800</option>
+<option>Maruti Baleno</option>
+<option>Maruti Eeco</option>
+<option>Maruti Ertiga</option>
+<option>Maruti Esteem</option>
+<option>Maruti Omni</option>
+<option>Maruti Ritz</option>
+<option>Maruti Zen Estilo</option>
+<option>Maruti Zen</option>
+<option>Nissan Micra</option>
+<option>Nissan Sunny</option>
+<option>Skoda Fabia</option>
+<option>Skoda Laura</option>
+<option>Skoda Octavia</option>
+<option>Skoda Superb</option>
+<option>Tata Indica</option>
+<option>Tata Indigo</option>
+<option>Tata Nano</option>
+<option>Toyota Corolla Altis</option>
+<option>Toyota Corolla</option>
+<option>Toyota Corsa</option>
+<option>Toyota Etios</option>
+<option>Toyota Etios Cross</option>
+<option>Toyota Etios Liva</option>
+<option>Toyota Innova</option>
+<option>Volkswagen Polo</option>
+<option>Volkswagen Vento</option>
+<option>Skoda Rapid</option>
+<option>Chevrolet Tavera</option>
+<option>Honda Mobilio</option>
+<option>BMW 5 Series</option>
+<option>Daewoo Matiz</option>
+<option>Renault Scala</option>
+<option>Tata Aria</option>
+<option>Tata Zest</option>
+<option>Chevrolet Enjoy</option>
+<option>Nissan Terrano</option>
+<option>Renault Pulse</option>
+<option>Tata Venture</option>
+<option>Tata Safari</option>
+<option>BMW 3 Series</option>
+<option>Audi Q3</option>
+<option>Ford Ecosport</option>
+<option>Audi A4</option>
+<option>Mitsubishi Lancer</option>
+<option>Maruti Ciaz</option>
+<option>Mahindra Verito</option>
+<option>Skoda Yeti</option>
+<option>Audi Q5</option>
+<option>Tata Bolt</option>
+<option>Nissan Evalia</option>
+<option>Maruti Celerio</option>
+<option>Renault Fluence</option>
+<option>Hyundai Elantra</option>
+<option>Hyundai Santa Fe</option>
+<option>Toyota Fortuner</option>
+<option>BMW 7 Series</option>
+<option>Toyota Qualis</option>
+<option>Chevrolet Sail</option>
+<option>Jaguar XF</option>
+<option>Tata Sumo Victa</option>
+<option>Mitsubishi Outlander</option>
+<option>Audi A6</option>
+<option>Tata Sumo Gold</option>
+<option>Opel Corsa</option>
+<option>Porsche Cayenne</option>
+<option>Mitsubishi Cedia</option>
+<option>Land Rover Range Rover</option>
+<option>Chevrolet Captiva</option>
+<option>Land Rover Freelander 2</option>
+<option>Suzuki MARUTI</option>
+<option>Hyundai Sonata</option>
+<option>Mitsubishi Pajero</option>
+<option>Hindustan Motors Ambassador</option>
+<option>Tata Indigo Marina</option>
+<option>Nissan Teana</option>
+<option>Hyundai Xcent</option>
+<option>Mercedes-Benz A Class</option>
+<option>Volkswagen Passat</option>
+<option>Volvo S60</option>
+<option>Maruti Versa</option>
+<option>Toyota Land Cruiser</option>
+<option>Premier Rio</option>
+<option>Mercedes-Benz GL Class</option>
+<option>Audi A3</option>
+<option>Chevrolet Tavera Neo 3</option>
+<option>Chevrolet Tavera Neo 2</option>
+<option>Volkswagen Vento GT</option>
+<option>Tata Indigo XL</option>
+<option>Hyundai Getz Prime</option>
+<option>Maruti A Star</option>
+<option>Chevrolet Optra Magnum</option>
+<option>Tata Indica V2 Xeta</option>
+<option>Tata Spacio</option>
+<option>Chevrolet Sail UVA</option>
+<option>Mercedes-Benz ML Class</option>
+<option>Maruti SX4</option>
+<option>Tata Safari Dicor</option>
+<option>Chevrolet Aveo UVA</option>
+<option>Maruti Alto 800</option>
+<option>Mahindra Ssangyong Rexton</option>
+<option>Tata Indigo CS</option>
+<option>Honda CRV</option>
+<option>Hyundai Fluidic Verna</option>
+<option>Chevrolet Optra SRV</option>
+<option>Tata Indigo Manza</option>
+<option>Mercedes-Benz CLA Class</option>
+<option>Mahindra Scorpio Mhawk</option>
+<option>Datsun Go</option>
+<option>Hyundai Tucson</option>
+<option>Ford Endeavour</option>
+<option>BMW X6 Series</option>
+<option>Hyundai Elite i20</option>
+<option>Volkswagen Jetta</option>
+<option>Land Rover Range Rover Evoque</option>
+<option>Honda City ZX</option>
+<option>Mercedes-Benz GLA Class</option>
+<option>Mercedes-Benz C Class</option>
+<option>Maruti Alto K10</option>
+<option>Jaguar XJ</option>
+<option>Tata Indica Vista</option>
+<option>Tata Sumo Grande</option>
+<option>BMW X3 Series</option>
+<option>Mercedes-Benz SLK Class</option>
+<option>Hyundai Elantra Fluidic</option>
+<option>Force Force One</option>
+<option>Isuzu MU7</option>
+<option>BMW X1 Series</option>
+<option>Tata Winger</option>
+<option>Mini Cooper S</option>
+<option>Mercedes-Benz E Class</option>
+<option>Maruti Wagon R Stingray</option>
+<option>Volkswagen Polo GT</option>
+<option>Mahindra Verito Vibe</option>
+<option>Mercedes-Benz S Class</option>
+<option>Tata Indica V2</option>
+<option>Nissan Micra New</option>
+<option>Nissan Micra Active</option>
+<option>Force Trax</option>
+<option>Volvo XC90</option>
+<option>Hyundai Excel</option>
+<option>Hyundai Grandeur</option>
+<option>Hyundai Terracan</option>
+<option>Hyundai Active i20</option>
+<option>Maruti Estilo</option>
+<option>Maruti Grand Vitara</option>
+<option>Maruti Gypsy</option>
+<option>Maruti Kizashi</option>
+<option>Toyota Alphard</option>
+<option>Toyota Aristo</option>
+<option>Toyota Celica</option>
+<option>Toyota Celsior</option>
+<option>Toyota Chaser</option>
+<option>Toyota Corona</option>
+<option>Toyota Cressida</option>
+<option>Toyota Crown</option>
+<option>Toyota Estima</option>
+<option>Toyota Grand Hiace</option>
+<option>Toyota Granivia</option>
+<option>Toyota Hiace</option>
+<option>Toyota Hilux Surf</option>
+<option>Toyota Land Cruiser 200</option>
+<option>Toyota Land Cruiser Prado</option>
+<option>Toyota Lexus</option>
+<option>Toyota Lucida</option>
+<option>Toyota Mark II</option>
+<option>Toyota MR - S</option>
+<option>Toyota Prado</option><option>Toyota Prius</option><option>Toyota Rav4</option><option>Toyota Runner</option><option>Toyota Sera</option><option>Toyota Sprinter Marino</option><option>Toyota Supra</option><option>Toyota Surf</option><option>Toyota Tracer</option><option>Toyota Vellfire</option><option>Toyota Ventury</option><option>Toyota Vista</option><option>Toyota Vitz</option><option>Toyota Voxi</option><option>Toyota Wagan Harrier</option><option>Honda Civic Hybrid</option><option>Honda Concerto</option><option>Honda Integra</option><option>Honda Odyssey</option><option>Mahindra Armada</option><option>Mahindra Axe 2700</option><option>Mahindra CJ 500</option><option>Mahindra CL 500</option><option>Mahindra Classic</option><option>Mahindra Commander</option><option>Mahindra Economy</option><option>Mahindra Festiva</option><option>Mahindra Forester</option><option>Mahindra Genio Dc</option><option>Mahindra Gio</option><option>Mahindra Legend</option><option>Mahindra Major</option><option>Mahindra Marshal</option><option>Mahindra Max Festara</option><option>Mahindra Maxx Festiva</option><option>Mahindra Maxx</option><option>Mahindra Maxximo</option><option>Mahindra MM 550</option><option>Mahindra Savari</option><option>Mahindra Thar</option><option>Mahindra Universal</option><option>Mahindra Voyager</option><option>Mahindra Willys</option><option>Mahindra Renault Logan Edge</option><option>Mahindra Renault Logan Tourer</option><option>Mahindra Reva E20</option><option>Mahindra Reva Model</option><option>Tata Ace</option><option>Tata Estate</option><option>Tata Indicab</option><option>Tata Magic Iris</option><option>Tata Mobile</option><option>Tata Movus</option><option>Tata Siera</option><option>Tata Sumo</option><option>Tata Super Ace</option><option>Tata Xenon</option><option>Audi A7</option><option>Audi A8</option><option>Audi C7</option><option>Audi R8</option><option>Audi RS5</option><option>Audi RS7</option><option>Audi S4</option><option>Audi S6</option><option>Audi TT Coupe</option><option>Ford Cortina</option><option>Ford Escort</option><option>Ford Focus</option><option>Ford Galaxy</option><option>Ford Janses</option><option>Ford Jeep</option><option>Ford Lincoln</option><option>Ford Metro Cab</option><option>Ford Mondeo</option><option>Ford Mustang</option><option>Ford Perfect</option><option>Ford Woody</option><option>BMW 1 Series</option><option>BMW 6 Series Convertible</option><option>BMW 6 Series Coupe</option><option>BMW 840 CI</option><option>BMW Gran Turismo</option><option>BMW M Models</option><option>BMW X5 Series</option><option>BMW X6 M</option><option>BMW Z3 Models</option><option>BMW Z4 Models</option><option>Mini Cooper Hatch</option><option>Mini Cooper Cabrio</option><option>Mini Cooper Convertible</option><option>Mini Cooper Countryman</option><option>Mini Cooper S Countryman</option><option>Mini Cooper Rover</option><option>Chevrolet Camaro</option><option>Chevrolet Convertible</option><option>Chevrolet Corvette</option><option>Chevrolet Forester</option><option>Chevrolet Kalos</option><option>Chevrolet Lacetti</option><option>Chevrolet Open Touring</option><option>Chevrolet Pontiac</option><option>Chevrolet SSR</option><option>Jeep Grand Cherokee</option><option>Hindustan Motors Contessa Classic</option><option>Hindustan Motors RTV</option><option>Hindustan Motors Trekker</option><option>Bentley Arnage</option><option>Bentley Azure</option><option>Bentley Azure T</option><option>Bentley Brooklands</option><option>Bentley Continental</option><option>Bentley Continental Flying Spur</option><option>Bentley Continental GT</option><option>Bentley Continental GTC</option><option>Bentley Continental Supersports</option><option>Bentley Flying Spur</option><option>Bentley Mulsanne</option><option>Bentley Turbo R</option><option>Mercedes-Benz 200D</option><option>Mercedes-Benz 240D</option><option>Mercedes-Benz 300D</option><option>Mercedes-Benz CLK Class</option><option>Mercedes-Benz CLS Class</option><option>Mercedes-Benz G Class</option><option>Mercedes-Benz MB100</option><option>Mercedes-Benz MB140</option><option>Mercedes-Benz R Class</option><option>Mercedes-Benz SL Class</option><option>Mercedes-Benz Viano</option><option>Fiat 1100</option><option>Fiat 500</option><option>Fiat Adira Mobile</option><option>Fiat Alfa Romeo</option><option>Fiat Avventura</option><option>Fiat Bravo</option><option>Fiat Cinquecento</option><option>Fiat CV 57L</option><option>Fiat Marea</option><option>Fiat Petra</option><option>Fiat Premier</option><option>Fiat Siena</option><option>Fiat Super</option><option>Fiat Uno</option><option>Jaguar Daimler</option><option>Jaguar F Type</option><option>Jaguar Mark IV</option><option>Jaguar Mark X</option><option>Jaguar Sovereign</option><option>Jaguar XK</option><option>Jaguar XKR</option><option>Jaguar XKR-S</option><option>Lamborghini Aventador</option><option>Lamborghini Gallardo</option><option>Lamborghini Murcielago LP 640</option><option>Hummer H2 SUV</option><option>Hummer H3 SUV</option><option>Isuzu Panther</option><option>Isuzu Trooper</option><option>Datsun Bluebird</option><option>Daewoo Cielo</option><option>Daewoo Nexia</option><option>Aston Martin DB9</option><option>Aston Martin DBS</option><option>Aston Martin Rapide</option><option>Aston Martin Vanquish</option><option>Aston Martin Vantage V8</option><option>Aston Martin Virage</option><option>Ferrari 458</option><option>Ferrari 599</option><option>Ferrari F149</option><option>Ferrari FF</option><option>Force Trip</option><option>Nissan 350Z</option><option>Nissan 370Z</option><option>Nissan Bluebird</option><option>Nissan Cefiro</option><option>Nissan GTR</option><option>Nissan Infiniti</option><option>Nissan March K12</option><option>Nissan Murano</option><option>Nissan Skyline</option><option>Nissan Urvan</option><option>Nissan X-Trail</option><option>Volkswagen Beetle</option><option>Volkswagen Phaeton</option><option>Volkswagen Polo Cross</option><option>Volkswagen Touareg</option><option>Volkswagen Type 2</option><option>Volkswagen Type 1300</option><option>Volkswagen VW 1500</option><option>Mitsubishi Challenger</option><option>Mitsubishi Delica</option><option>Mitsubishi FTO</option><option>Mitsubishi GTO</option><option>Mitsubishi Lancer Cedia</option><option>Mitsubishi Lancer Evolution</option><option>Mitsubishi Montero</option><option>Mitsubishi Shogun</option><option>Mitsubishi Sigme</option><option>Land Rover Dfender</option><option>Land Rover Discovery</option><option>Land Rover Discovery 3</option><option>Land Rover Discovery 4</option><option>Land Rover Range Rover Sport</option><option>Renault Koleos</option><option>Renault Megane Scenic</option><option>Opel Astra</option><option>Opel Corsa Sail</option><option>Opel Corsa Swing</option><option>Opel Vectra</option><option>Premier Padmini</option><option>Premier Peugeot</option><option>Premier Rio Plus</option><option>Premier Sigma</option><option>Rolls Royce 1938</option><option>Rolls Royce Ghost</option><option>Rolls Royce Phantom</option><option>Rolls Royce Silver</option><option>Rolls Royce Silver Seraph</option><option>Rolls Royce Wraith</option><option>Ssangyong MB100</option><option>Ssangyong Musso</option><option>Ssangyong Musso TD</option><option>Volvo S80</option><option>Volvo V40</option><option>Volvo XC70</option><option>BMW i8</option><option>Datsun Go Plus</option><option>Ferrari F12 Berlinetta</option><option>Ford Figo Aspire</option><option>Hyundai Creta</option><option>Lamborghini Huracan</option><option>Maruti S Cross</option><option>Renault Lodgy</option><option>Honda New Jazz</option><option>Tata Magic</option><option>Ford Classic</option><option>Ferrari 360</option><option>Mercedes-Benz GLE</option><option>Renault Kwid</option><option>Tata Safari Storme</option><option>Mahindra TUV 300</option><option>Chevrolet Trailblazer</option><option>Land Rover Freelander</option><option>Maybach 57</option><option>Maybach 62</option><option>Mahindra KUV 100</option><option>Fiat Punto</option><option>Fiat Abarth Punto</option><option>Audi RS6 Avant</option><option>Audi TT</option><option>Chevrolet Sail Sedan</option><option>Chevrolet Tavera Neo</option><option>Fiat Ducato Caravan</option><option>Fiat Linea Classic</option><option>Fiat Palio NV</option>
+<option>Fiat Siena Weekend</option>
+<option>Ford Fiesta Classic</option>
+<option>Hyundai Neo Fluidic Elantra</option>
+<option>Mahindra Renault Logan Edge Connect</option>
+<option>Mahindra Renault Logan Play</option>
+<option>Maruti Dzire</option>
+<option>Nissan GT-R</option>
+<option>Reva i</option>
+<option>Skoda Octavia Combi</option>
+<option>Tata Grande Dicor</option>
+<option>Tata Indica eV2</option>
+<option>Tata Indica eV2 Xeta</option>
+<option>Tata Indigo eCS</option>
+<option>Tata Manza Club Class</option>
+<option>Toyota Commuter</option>
+<option>Toyota Premio</option>
+<option>Toyota Previa</option>
+<option>Volkswagen 1600</option>
+<option>Volkswagen Caravelle</option>
+<option>Ford Falcon</option>
+<option>Mahindra XUV500</option>
+<option>Toyota Tercel</option>
+<option>Toyota Starlet</option>
+<option>Audi S5</option>
+<option>Fiat Punto Avventura</option>
+<option>Nissan Primera</option><option>Hyundai Sonata One</option>
+<option>Mahindra Scorpio Three</option>
+<option>Tata Indica V2 Turbo</option>
+<option>Mahindra Nuvo Sport</option>
+<option>Tata Tiago</option>
+<option>ICML Rhino RX</option>
+<option>Honda BR-V</option>
+<option>Porsche Macan</option>
+<option>Mahindra e-Verito</option>
+<option>Mercedes-Benz GLC Class</option>
+<option>Datsun Redi-GO</option>
+<option>Fiat Adventure</option>
+<option>Volkswagen Ameo</option>
+<option>Jaguar XE</option>
+<option>Mahindra Reva</option>
+<option>Maruti Vitara</option>
+<option>Isuzu D-Max</option><option>Land Rover Discovery Sport</option>
+<option>Mercedes-Benz GLS</option>
+<option>Aprilia SRV 850</option>
+<option>Maruti Ignis</option><option>Tata Hexa</option>
+<option>Royal Enfield Himalayan</option>
+<option>Suzuki Access 125</option>
+<option>Vespa VXL</option>
+<option>Victory Vegas</option>
+<option>Kawasaki Z250</option>
+<option>Tata Tigor</option>
+<option>Tata Manza</option>
+<option>Honda WRV</option>
+<option>Toyota Camry</option>
+<option>Mercedes-Benz B Class</option>
+</select>
+</div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                    <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Model Year</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="year" class="form-control" id="year">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">2017</option>
+                                                        <option value="">2016</option>
+                                                        <option value="">2015</option>
+                                                        <option value="">2014</option>
+                                                        <option value="">2013</option>
+                                                        <option value="">2012</option>
+                                                        <option value="">2011</option>
+                                                        <option value="">2010</option>
+                                                        <option value="">2009</option>
+                                                        <option value="">2008</option>
+                                                        <option value="">2007</option>
+                                                        <option value="">2006</option>
+                                                        <option value="">2005</option>
+                                                        <option value="">2004</option>
+                                                        <option value="">2003</option>
+                                                        <option value="">2002</option>
+                                                        <option value="">2001</option>
+                                                        <option value="">2000</option>
+                                                        <option value="">1999</option>
+                                                        <option value="">1998</option>
+                                                        <option value="">1997</option>
+                                                        <option value="">1996</option>
+                                                        <option value="">1995</option>
+                                                        <option value="">1994</option>
+                                                        <option value="">1993</option>
+                                                        <option value="">1992</option>
+                                                        <option value="">1991</option>
+                                                        <option value="">1990</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            
+                                                       </div>   
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Plate No</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Plate No">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Chassis Number</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Chassis Number">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Preferred Company</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="company" class="form-control" id="company">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Gulf Insurance Company</option>
+                                                        <option value="">Kuwait Insurance Company</option>
+                                                        <option value="">Al Ahleia Insurance Company</option>
+                                                        <option value="">Warba Insurance Company</option>
+                                                        <option value="">First Takaful Insurance Company</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Policy Company</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="policy" class="form-control" id="policy">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Gulf Insurance Company</option>
+                                                        <option value="">Kuwait Insurance Company</option>
+                                                        <option value="">Al Ahleia Insurance Company</option>
+                                                        <option value="">Warba Insurance Company</option>
+                                                        <option value="">First Takaful Insurance Company</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">User Remark</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="4">Want full Coverage for two years.</textarea>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">AMIB Remark</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="7">Policy Premium and details updated based on telephonic conversation. Please make payment.</textarea>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+							</div>
+                               <div class="tab-pane" id="enrol_documents">      
+                            <div class="col-md-12">
+                                <div>
+                                    <h4 class="header-title m-t-0 m-b-20" style="color: #01704a;">Upload Documents</h4>                    
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Daftar Copy - Page 1</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 1</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 2</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 3</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 4</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Current Policy Copy - 1</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Current Policy Copy - 2</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="enrol_payment"> 
+                            <div class="col-md-12">
+                            <h4 class="header-title m-t-0 m-b-20" style="color: #01704a;">Payment Details</h4>
+                            	<div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Premium</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Premium">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Payment Date</label>
+                                                <div class="col-md-8">                                                    
+                                                    <input type="date" id="fname" readonly class="form-control">               
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Issue Fee</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Issue Fee">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Payment Method</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="method" class="form-control" id="method">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Cash</option>
+                                                        <option value="">Credit Card</option>
+                                                        <option value="">Check</option>
+                                                        <option value="">Knet Payment</option>
+                                                        <option value="">Paypal</option>
+                                                        <option value="">Wire Transfer</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Supervision Fee</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="Supervision Fee">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Bank</label>
+                                                <div class="col-sm-8">
+                                                    <select data-placeholder="bank" class="form-control" id="bank">
+                                                        <option selected="selected">- select -</option>	
+                                                        <option value="700">Abu Dhabi Commercial Bank</option>
+                                                        <option value="701">Commercial Bank of Kuwait (K.S.C)</option>
+                                                        <option value="702">Gulf Bank (K.S.C)</option>
+                                                        <option value="703">Al Ahli Bank of Kuwait (K.S.C.P.)</option>
+                                                        <option value="704">Al Ahli United Bank</option>
+                                                        <option value="705">Burgan Bank (K.S.C)</option>
+                                                        <option value="706">Kuwait International Bank (K.S.C)</option>
+                                                        <option value="707">The Industrial Bank of Kuwait (K.S.C)</option>
+                                                        <option value="708">Kuwait Finance House</option>
+                                                        <option value="709">Boubyan Bank (K.S.C)</option>
+                                                        <option value="710">Warba Bank</option>
+                                                        <option value="711">National Bank of Kuwait (K.S.C)</option>
+                                                        <option value="75">Ahmedabad Mercantile Co-Op Bank Ltd</option>
+                                                        <option value="307">Airtel Payments Bank Limited</option>
+                                                        <option value="3">Allahabad Bank</option>
+                                                        <option value="106">Almora Urban Co-Operative Bank Ltd</option>
+                                                        <option value="4">Andhra Bank</option>
+                                                        <option value="139">Andhra Pragathi Grameena Bank</option>
+                                                        <option value="108">Apna Sahakari Bank Ltd</option>
+                                                        <option value="109">Austarlia and New Zealand Banking Gorup Ltd</option>
+                                                        <option value="5">Axis Bank</option>
+                                                        <option value="282">Bandhan Bank Limited</option>
+                                                        <option value="160">Bank Internasional Indonesia</option>
+                                                        <option value="6">Bank Of America</option>
+                                                        <option value="7">Bank Of Bahrain And Kuwait</option>
+                                                        <option value="8">Bank Of Baroda</option>
+                                                        <option value="9">Bank Of Ceylon</option>
+                                                        <option value="10">Bank Of India</option>
+                                                        <option value="11">Bank Of Maharashtra</option>
+                                                        <option value="76">Bank Of Nova Scotia</option>
+                                                        <option value="12">Bank Of Tokyo-Mitsubishi Ufj Ltd</option>
+                                                        <option value="13">Barclays Bank Plc</option>
+                                                        <option value="14">Bassein Catholic Co-Op Bank Ltd</option>
+                                                        <option value="77">Bharat Co-Op Bank (Mumbai) Ltd</option>
+                                                        <option value="173">Bharatiya Mahila Bank Ltd.</option>
+                                                        <option value="15">Bnp Paribas</option>
+                                                        <option value="16">Canara Bank</option>
+                                                        <option value="111">Capital Local Area Bank Ltd</option>
+                                                        <option value="296">Capital Small Finance Bank Ltd</option>
+                                                        <option value="17">Catholic Syrian Bank Ltd</option>
+                                                        <option value="18">Central Bank Of India</option>
+                                                        <option value="19">Chinatrust Commercial Bank</option>
+                                                        <option value="20">Citibank</option>
+                                                        <option value="21">Citizencredit Co-Op Bank Ltd</option>
+                                                        <option value="22">City Union Bank Ltd</option>
+                                                        <option value="136">Commonwealth Bank of Australia</option>
+                                                        <option value="23">Corporation Bank</option>
+                                                        <option value="78">Cosmos Co-Op Bank Ltd</option>
+                                                        <option value="24">Credit Agricole Corp and Investment Bank</option>
+                                                        <option value="113">Credit Suisse Ag</option>
+                                                        <option value="25">Dbs Bank Ltd</option>
+                                                        <option value="26">Dena Bank</option>
+                                                        <option value="298">Deogiri Nagari Sahakari Bank Ltd.</option>
+                                                        <option value="27">Deutsche Bank Ag</option>
+                                                        <option value="28">Development Credit Bank Ltd</option>
+                                                        <option value="29">Dhanlaxmi Bank Ltd</option>
+                                                        <option value="30">Dicgc</option>
+                                                        <option value="180">Doha Bank QSC</option>
+                                                        <option value="31">Dombivli Nagari Sahakari Bank Ltd</option>
+                                                        <option value="305">Equitas Small Finance Bank Limited</option>
+                                                        <option value="322">ESAF Small Finance Bank Limited</option>
+                                                        <option value="181">Export Import Bank Of India</option>
+                                                        <option value="79">Federal Bank Ltd</option>
+                                                        <option value="32">Firstrand Bank Ltd</option>
+                                                        <option value="80">Greater Bombay Co-Op Bank Ltd</option>
+                                                        <option value="135">Gurgaon Gramin Bank</option>
+                                                        <option value="33">Hdfc Bank Ltd</option>
+                                                        <option value="297">Himachal Pradesh State Cooperative Bank Ltd</option>
+                                                        <option value="34">Hsbc</option>
+                                                        <option value="35">Icici Bank Ltd</option>
+                                                        <option value="36">Idbi Bank Ltd</option>
+                                                        <option value="284">IDFC Bank Ltd</option>
+                                                        <option value="306">Idukki District Co-Operative Bank Ltd</option>
+                                                        <option value="37">Indian Bank</option>
+                                                        <option value="38">Indian Overseas Bank</option>
+                                                        <option value="39">Indusind Bank Ltd</option>
+                                                        <option value="163">Industrial and Commercial Bank of China Ltd.</option>
+                                                        <option value="285">Industrial Bank of Korea</option>
+                                                        <option value="40">Ing Vysya Bank Ltd</option>
+                                                        <option value="114">Jalgaon Janata Sahkari Bank Ltd</option>
+                                                        <option value="81">Jammu And Kashmir Bank Ltd</option>
+                                                        <option value="41">Janakalyan Sahakari Bank Ltd</option>
+                                                        <option value="166">Janaseva Sahakari Bank Borivli Ltd.</option>
+                                                        <option value="115">Janaseva Sahakari Bank Ltd Pune</option>
+                                                        <option value="101">Janata Sahkari Bank Ltd Pune</option>
+                                                        <option value="42">Jpmorgan Chase Bank</option>
+                                                        <option value="116">Kallappanna Awade Ich Janata S Bank</option>
+                                                        <option value="82">Kalupur Commercial Co Op Bank Ltd</option>
+                                                        <option value="83">Kalyan Janata Sahakari Bank Ltd</option>
+                                                        <option value="43">Kapole Co-Op Bank</option>
+                                                        <option value="44">Karnataka Bank Ltd</option>
+                                                        <option value="84">Karnataka State Co-Op Apex Bank Ltd</option>
+                                                        <option value="123">Karnataka Vikas Grameena Bank</option>
+                                                        <option value="45">Karur Vysya Bank</option>
+                                                        <option value="289">KEB Hana Bank</option>
+                                                        <option value="176">Kerala Gramin Bank</option>
+                                                        <option value="46">Kotak Mahindra Bank</option>
+                                                        <option value="153">Kurmanchal Nagar Sahakari Bank Ltd</option>
+                                                        <option value="85">Lakshmi Vilas Bank Ltd</option>
+                                                        <option value="47">Mahanagar Co-Op Bank Ltd</option>
+                                                        <option value="299">Maharashtra Gramin Bank</option>
+                                                        <option value="48">Maharashtra State Co-Op Bank</option>
+                                                        <option value="49">Mashreq Bank Psc</option>
+                                                        <option value="86">Mehsana Urban Co-Op Bank Ltd</option>
+                                                        <option value="50">Mizuho Corporate Bank Ltd</option>
+                                                        <option value="117">Mumbai District Central Co-Op Bank Ltd</option>
+                                                        <option value="169">Nagar Urban Co-operative Bank</option>
+                                                        <option value="125">Nagpur Nagarik Sahakari Bank Ltd</option>
+                                                        <option value="87">Nainital Bank Ltd</option>
+                                                        <option value="155">National Australia Bank</option>
+                                                        <option value="286">National Bank of Abu Dhabi</option>
+                                                        <option value="51">New  India Co-Op  Bank  Ltd</option>
+                                                        <option value="52">Nkgsb Co-Op Bank Ltd</option>
+                                                        <option value="138">North Malabar Gramin Bank</option>
+                                                        <option value="53">Nutan Nagarik Sahakari Bank Ltd</option>
+                                                        <option value="54">Oman International Bank Saog</option>
+                                                        <option value="55">Oriental Bank Of Commerce</option>
+                                                        <option value="56">Parsik Janata Sahakari Bank Ltd</option>
+                                                        <option value="177">Pragathi Krishna Gramin Bank</option>
+                                                        <option value="137">Prathama Bank</option>
+                                                        <option value="118">Prime Co-Operative Bank Ltd</option>
+                                                        <option value="57">Punjab And Maharashtra Co-Op Bank Ltd</option>
+                                                        <option value="58">Punjab And Sind Bank</option>
+                                                        <option value="59">Punjab National Bank</option>
+                                                        <option value="119">Rabobank International (CCRB)</option>
+                                                        <option value="168">Rajgurunagar Sahkari Bank Ltd</option>
+                                                        <option value="60">Rajkot Nagarik Sahakari Bank Ltd</option>
+                                                        <option value="88">Ratnakar Bank Ltd</option>
+                                                        <option value="61">Reserve Bank Of India</option>
+                                                        <option value="89">Royal Bank Of Scotland</option>
+                                                        <option value="295">Samarth Sahakari Bank Ltd</option>
+                                                        <option value="90">Saraswat Co-Op Bank Ltd</option>
+                                                        <option value="140">SBER Bank</option>
+                                                        <option value="91">Shamrao Vithal Co-Op Bank Ltd</option>
+                                                        <option value="179">Shikshak Sahkari Bank Ltd.</option>
+                                                        <option value="62">Shinhan Bank</option>
+                                                        <option value="293">Shivalik Mercentile Coop Bank Ltd</option>
+                                                        <option value="142">Shri Chhatrapati Rajarshi Shahu Urban Co-Op Bank Ltd</option>
+                                                        <option value="63">Societe Generale</option>
+                                                        <option value="64">South Indian Bank</option>
+                                                        <option value="65">Standard Chartered Bank</option>
+                                                        <option value="66">State Bank Of Bikaner And Jaipur</option>
+                                                        <option value="67">State Bank Of Hyderabad</option>
+                                                        <option value="68">State Bank Of India</option>
+                                                        <option value="69">State Bank Of Mauritius Ltd</option>
+
+                                                        <option value="70">State Bank Of Mysore</option>
+                                                        <option value="71">State Bank Of Patiala</option>
+                                                        <option value="72">State Bank Of Travancore</option>
+                                                        <option value="148">Sumitomo Mitsui Banking Corporation</option>
+                                                        <option value="281">Surat National Co-operative Bank</option>
+                                                        <option value="92">Surat Peoples Co-Op Bank Ltd</option>
+                                                        <option value="319">Suryoday Small Finance Bank Limited</option>
+                                                        <option value="73">Syndicate Bank</option>
+                                                        <option value="74">Tamilnad Mercantile Bank Ltd</option>
+                                                        <option value="93">Tamilnadu State Apex Co-Op Bank Ltd</option>
+                                                        <option value="309">Telangana State Coop Apex Bank</option>
+                                                        <option value="120">Thane Bharat Sahakari Bank Ltd</option>
+                                                        <option value="150">Thane District Central Co-operative Bank Ltd</option>
+                                                        <option value="94">Thane Janata Sahakari Bank Ltd</option>
+                                                        <option value="121">The A.P. Mahesh Co-Op Urban Bank Ltd</option>
+                                                        <option value="151">The Akola District Central Co-operative Bank</option>
+                                                        <option value="172">The Akola Janata Commercial Co-operative Bank</option>
+                                                        <option value="161">The Andhra Pradesh State Co-op Bank Ltd.</option>
+                                                        <option value="321">The Baramati Sahakari Bank Limited</option>
+                                                        <option value="167">The Delhi State Co-operative Bank Ltd.</option>
+                                                        <option value="152">The Gadchiroli District Central Co-operative Bank Ltd</option>
+                                                        <option value="122">The Gujarat State Co-Operative Bank Ltd</option>
+                                                        <option value="280">The Hasti Co-operative Bank Ltd.</option>
+                                                        <option value="154">The Jalgaon Peoples Co-op Bank</option>
+                                                        <option value="126">The Kangra Co-Operative Bank Ltd.</option>
+                                                        <option value="102">The Karad Urban Co-Op Bank Ltd</option>
+                                                        <option value="124">The Municipal Co-Operative Bank Ltd. Mumbai</option>
+                                                        <option value="104">The Nasik Merchants Co-Op Bank Ltd</option>
+                                                        <option value="311">The Navnirman Co-Operative Bank Limited</option>
+                                                        <option value="292">The Pandharpur Urban Coop Bank Ltd</option>
+                                                        <option value="127">The Rajasthan State Co-Operative Bank Ltd</option>
+                                                        <option value="159">The Sahebrao Deshmukh Co-op Bank Ltd.</option>
+                                                        <option value="149">The Seva Vikas Co-operative Bank Ltd</option>
+                                                        <option value="162">The Solapur Janata Sahkari Bank Ltd.</option>
+                                                        <option value="129">The Surat District Co-Operative Bank Ltd</option>
+                                                        <option value="133">The Sutex Co Op Bank Ltd</option>
+                                                        <option value="144">The Varachha Co-Op. Bank Ltd</option>
+                                                        <option value="130">The Vishweshwar Sahakari Bank Ltd Pune</option>
+                                                        <option value="178">The Zoroastrian Cooperative Bank Ltd.</option>
+                                                        <option value="145">Tumkur Grain Merchants Cooperative Bank Ltd</option>
+                                                        <option value="103">UBS AG</option>
+                                                        <option value="96">Uco Bank</option>
+                                                        <option value="314">Ujjivan Small Finance Bank Limited</option>
+                                                        <option value="97">Union Bank Of India</option>
+                                                        <option value="98">United Bank Of India</option>
+                                                        <option value="164">United Overseas Bank</option>
+                                                        <option value="323">Utkarsh Small Finance Bank</option>
+                                                        <option value="146">Vasai Vikas Sahakari Bank Ltd</option>
+                                                        <option value="99">Vijaya Bank</option>
+                                                        <option value="95">West Bengal State Co-Op Bank Ltd</option>
+                                                        <option value="147">Westpac Banking Corporation</option>
+                                                        <option value="131">Woori Bank</option>
+                                                        <option value="100">Yes Bank Ltd</option>
+                                                        <option value="165">Zila Sahkari Bank Ltd. Ghaziabad</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Net Payable</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Net Payable">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Card Type</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="payment" class="form-control" id="payment">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Visa</option>
+                                                        <option value="">MasterCard</option>
+                                                        <option value="">Discover</option>
+                                                        <option value="">American Express</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label"></label>
+                                                <div class="col-md-8">
+                                                   <button class="btn btn-lg btn-custom btn-block" type="submit">Submit Request</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group account-btn text-center m-t-10">
+                                            	<label class="col-md-4 control-label"></label>
+                                                <div class="col-md-4">
+                                                    <button class="btn btn-lg btn-custom btn-block" type="payment">Make Payment</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            </div>
+                                    
+                                                                	
+                                                                       
+                                    </div> <!-- row end -->
+                                    </form>
+                                                        
+                                    </div>        
+                                                    <div class="tab-pane" id="renew"><br>
+                                                    
+                                                    <!-- pending for renewal start -->
+                                    
+                                    <div class="row">
+                            <div class="col-md-12">
+                                <div class="m-b-20" >
+                                    <h5>Pending for Renewal</h5>                                    
+
+                                    <table id="datatable-fixed-col responsive" class="table table-striped table-bordered">
+                                        <thead>
+                                        <tr>
+                                        	<th></th>
+                                            <th>KT No</th>
+                                            <th>Chassis No</th>
+                                            <th>Description</th>
+                                            <th>Model Year</th>
+                                            <th>Make</th>
+                                            <th>Sub Make</th>
+                                            <th>Insurance Co</th>
+                                            <th>Policy No</th>
+                                            <th>Policy Date</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Net Amount</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><input id="checkbox5" type="radio"></td>
+                                            <td>06/234145</td>
+                                            <td>JKMYP012345345678</td>
+                                            <td>4 Wheel Drive</td>
+                                            <td>2017</td>
+                                            <td>Suzuki</td>
+                                            <td>Ignis</td>
+                                            <td>First Takaful</td>
+                                            <td>012345345678</td>
+                                            <td>11-04-2012</td>
+                                            <td>16-07-2013</td>
+                                            <td>15-07-2014</td>
+                                            <td>KWD 85</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input id="checkbox5" type="radio"></td>
+                                            <td>06/234145</td>
+                                            <td>AUQ7P012345345678</td>
+                                            <td>German Automobile</td>
+                                            <td>2016</td>
+                                            <td>Audi</td>
+                                            <td>Q7</td>
+                                            <td>First Takaful</td>
+                                            <td>425345345678</td>
+                                            <td>19-04-2014</td>
+                                            <td>08-06-2015</td>
+                                            <td>07-06-2016</td>
+                                            <td>KWD 60</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input id="checkbox5" type="radio"></td>
+                                             <td>06/234145</td>
+                                            <td>TOCOP012345345678</td>
+                                            <td>Adventure Model</td>
+                                            <td>2016</td>
+                                            <td>Toyota</td>
+                                            <td>Corolla</td>
+                                            <td>First Takaful</td>
+                                            <td>122345345678</td>
+                                            <td>22-04-2015</td>
+                                            <td>12-05-2015</td>
+                                            <td>11-05-2016</td>
+                                            <td>KWD 45</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input id="checkbox5" type="radio"></td>
+                                             <td>06/234145</td>
+                                            <td>MBSCP012345345678</td>
+                                            <td>Sports Model</td>
+                                            <td>2015</td>
+                                            <td>Mercedes Benz</td>
+                                            <td>S Class</td>
+                                            <td>First Takaful</td>
+                                            <td>852345345678</td>
+                                            <td>20-02-2015</td>
+                                            <td>27-11-2016</td>
+                                            <td>26-11-2017</td>
+                                            <td>KWD 125</td>
+                                        </tr>                                                                               
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                                    
+                                    <!-- pending for renewal end -->
+                                                    
+                                                       <form name="new_policy" class="oic_form">  
+                                                        <div class="row"> <!-- row start -->
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                                        <label class="col-md-4 control-label">ID Number</label>
+                                                                        <div class="col-md-8">
+                                                                            <input type="text" class="form-control" placeholder="ID Number">
+                                                                        </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control-label">Req Seq No</label>
+                                                                    <div class="col-md-8">
+                                                                        <input type="text" class="form-control" placeholder="Req Seq No">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                       </div> 
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                    <label class="col-md-4 control-label">Policy Type</label>
+                                                                    <div class="col-md-8">
+                                                                       <select data-placeholder="type" class="form-control" id="type">
+                                                                            <option selected="selected">- select -</option>
+                                                                            <option value="">Liability Coverage</option>
+                                                                            <option value="">Collision Coverage</option>
+                                                                            <option value="">Comprehensive Coverage</option>
+                                                                            <option value="">Uninsured/Underinsured Motorist Coverage</option>
+                                                                            <option value="">Medical Payments</option>
+                                                                            <option value="">Personal Injury Protection</option>
+                                                                       </select>
+                                                                    </div>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Policy Duration</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="duration" class="form-control" id="duration">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="1">1 year</option>
+                                                        <option value="2">2 years</option>
+                                                        <option value="3">3 years</option>
+                                                        <option value="4">4 years</option>
+                                                        <option value="5">5 years</option>
+                                                        <option value="6">6 years</option>
+                                                        <option value="7">7 years</option>
+                                                        <option value="8">8 years</option>
+                                                        <option value="9">9 years</option>
+                                                        <option value="10">10 years</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Vehicle Make</label>
+                                                <div class="col-sm-8">
+                                                    <select data-placeholder="Make" class="form-control" id="make">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="ACURA">ACURA</option>
+                                                        <option value="ASTON MARTIN">ASTON MARTIN</option>
+                                                        <option value="AUDI">AUDI</option>
+                                                        <option value="BENTLEY">BENTLEY</option>
+                                                        <option value="BMW">BMW</option>
+                                                        <option value="BUICK">BUICK</option>
+                                                        <option value="CADILLAC">CADILLAC</option>
+                                                        <option value="CHEVROLET">CHEVROLET</option>
+                                                        <option value="CHRYSLER">CHRYSLER</option>
+                                                        <option value="DATSUN">DATSUN</option>
+                                                        <option value="DODGE">DODGE</option>
+                                                        <option value="FERRARI">FERRARI</option>
+                                                        <option value="FORD">FORD</option>
+                                                        <option value="GENERAL MOTORS">GENERAL MOTORS</option>
+                                                        <option value="GMC">GMC</option>
+                                                        <option value="HONDA">HONDA</option>
+                                                        <option value="HUMMER">HUMMER</option>
+                                                        <option value="HYUNDAI">HYUNDAI</option>
+                                                        <option value="INFINITI">INFINITI</option>
+                                                        <option value="ISUZU">ISUZU</option>
+                                                        <option value="JAGUAR">JAGUAR</option>
+                                                        <option value="JEEP">JEEP</option>
+                                                        <option value="KIA">KIA</option>
+                                                        <option value="LAMBORGHINI">LAMBORGHINI</option>
+                                                        <option value="LAND ROVER">LAND ROVER</option>
+                                                        <option value="LEXUS">LEXUS</option>
+                                                        <option value="LINCOLN">LINCOLN</option>
+                                                        <option value="LOTUS">LOTUS</option>
+                                                        <option value="MAHINDRA & MAHINDRA">MAHINDRA & MAHINDRA</option>
+                                                        <option value="MARUTI">MARUTI</option>
+                                                        <option value="MASERATI">MASERATI</option>
+                                                        <option value="MAYBACH">MAYBACH</option>
+                                                        <option value="MAZDA">MAZDA</option>
+                                                        <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+                                                        <option value="MERCURY">MERCURY</option>
+                                                        <option value="MINI">MINI</option>
+                                                        <option value="MITSUBISHI">MITSUBISHI</option>
+                                                        <option value="NISSAN">NISSAN</option>
+                                                        <option value="PONTIAC">PONTIAC</option>
+                                                        <option value="PORSCHE">PORSCHE</option>
+                                                        <option value="RENAULT">RENAULT</option>
+                                                        <option value="ROLLS-ROYCE">ROLLS-ROYCE</option>
+                                                        <option value="SAAB">SAAB</option>
+                                                        <option value="SATURN">SATURN</option>
+                                                        <option value="SUBARU">SUBARU</option>
+                                                        <option value="SUZUKI">SUZUKI</option>
+                                                        <option value="TATA">TATA</option>
+                                                        <option value="TOYOTA">TOYOTA</option>
+                                                        <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                                                        <option value="VOLVO">VOLVO</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Vehicle Model</label>
+                                                <div class="col-md-8">
+<select data-placeholder="model" class="form-control" id="model">
+	<option selected="selected">- select -</option>
+<option>Hyundai i10</option>
+<option>Maruti Wagon R</option>
+<option>Maruti Swift</option>
+<option>Hyundai Santro Xing</option>
+<option>Hyundai i20</option>
+<option>Hyundai Grand i10</option>
+<option>Maruti Alto</option>
+<option>Maruti Swift Dzire</option>
+<option>Honda City</option>
+<option>Ford Figo</option>
+<option>Honda Amaze</option>
+<option>Hyundai Eon</option>
+<option>Chevrolet Aveo</option>
+<option>Chevrolet Beat</option>
+<option>Chevrolet Cruze</option>
+<option>Chevrolet Optra</option>
+<option>Chevrolet Spark</option>
+<option>Fiat Grande Punto</option>
+<option>Fiat Linea</option>
+<option>Fiat Palio</option>
+<option>Ford Fiesta</option>
+<option>Ford Fusion</option>
+<option>Ford Ikon</option>
+<option>Honda Accord</option>
+<option>Honda Brio</option>
+<option>Honda New City</option>
+<option>Honda Civic</option>
+<option>Honda Jazz</option>
+<option>Hyundai Accent</option>
+<option>Hyundai Getz</option>
+<option>Audi Q7</option>
+<option>Volvo XC60</option>
+<option>Hyundai Santro</option>
+<option>Hyundai Verna</option>
+<option>Mahindra Bolero</option>
+<option>Mahindra Quanto</option>
+<option>Mahindra Scorpio</option>
+<option>Mahindra Xylo</option>
+<option>Renault Duster</option>
+<option>Mahindra Renault Logan</option>
+<option>Maruti 1000</option>
+<option>Maruti 800</option>
+<option>Maruti Baleno</option>
+<option>Maruti Eeco</option>
+<option>Maruti Ertiga</option>
+<option>Maruti Esteem</option>
+<option>Maruti Omni</option>
+<option>Maruti Ritz</option>
+<option>Maruti Zen Estilo</option>
+<option>Maruti Zen</option>
+<option>Nissan Micra</option>
+<option>Nissan Sunny</option>
+<option>Skoda Fabia</option>
+<option>Skoda Laura</option>
+<option>Skoda Octavia</option>
+<option>Skoda Superb</option>
+<option>Tata Indica</option>
+<option>Tata Indigo</option>
+<option>Tata Nano</option>
+<option>Toyota Corolla Altis</option>
+<option>Toyota Corolla</option>
+<option>Toyota Corsa</option>
+<option>Toyota Etios</option>
+<option>Toyota Etios Cross</option>
+<option>Toyota Etios Liva</option>
+<option>Toyota Innova</option>
+<option>Volkswagen Polo</option>
+<option>Volkswagen Vento</option>
+<option>Skoda Rapid</option>
+<option>Chevrolet Tavera</option>
+<option>Honda Mobilio</option>
+<option>BMW 5 Series</option>
+<option>Daewoo Matiz</option>
+<option>Renault Scala</option>
+<option>Tata Aria</option>
+<option>Tata Zest</option>
+<option>Chevrolet Enjoy</option>
+<option>Nissan Terrano</option>
+<option>Renault Pulse</option>
+<option>Tata Venture</option>
+<option>Tata Safari</option>
+<option>BMW 3 Series</option>
+<option>Audi Q3</option>
+<option>Ford Ecosport</option>
+<option>Audi A4</option>
+<option>Mitsubishi Lancer</option>
+<option>Maruti Ciaz</option>
+<option>Mahindra Verito</option>
+<option>Skoda Yeti</option>
+<option>Audi Q5</option>
+<option>Tata Bolt</option>
+<option>Nissan Evalia</option>
+<option>Maruti Celerio</option>
+<option>Renault Fluence</option>
+<option>Hyundai Elantra</option>
+<option>Hyundai Santa Fe</option>
+<option>Toyota Fortuner</option>
+<option>BMW 7 Series</option>
+<option>Toyota Qualis</option>
+<option>Chevrolet Sail</option>
+<option>Jaguar XF</option>
+<option>Tata Sumo Victa</option>
+<option>Mitsubishi Outlander</option>
+<option>Audi A6</option>
+<option>Tata Sumo Gold</option>
+<option>Opel Corsa</option>
+<option>Porsche Cayenne</option>
+<option>Mitsubishi Cedia</option>
+<option>Land Rover Range Rover</option>
+<option>Chevrolet Captiva</option>
+<option>Land Rover Freelander 2</option>
+<option>Suzuki MARUTI</option>
+<option>Hyundai Sonata</option>
+<option>Mitsubishi Pajero</option>
+<option>Hindustan Motors Ambassador</option>
+<option>Tata Indigo Marina</option>
+<option>Nissan Teana</option>
+<option>Hyundai Xcent</option>
+<option>Mercedes-Benz A Class</option>
+<option>Volkswagen Passat</option>
+<option>Volvo S60</option>
+<option>Maruti Versa</option>
+<option>Toyota Land Cruiser</option>
+<option>Premier Rio</option>
+<option>Mercedes-Benz GL Class</option>
+<option>Audi A3</option>
+<option>Chevrolet Tavera Neo 3</option>
+<option>Chevrolet Tavera Neo 2</option>
+<option>Volkswagen Vento GT</option>
+<option>Tata Indigo XL</option>
+<option>Hyundai Getz Prime</option>
+<option>Maruti A Star</option>
+<option>Chevrolet Optra Magnum</option>
+<option>Tata Indica V2 Xeta</option>
+<option>Tata Spacio</option>
+<option>Chevrolet Sail UVA</option>
+<option>Mercedes-Benz ML Class</option>
+<option>Maruti SX4</option>
+<option>Tata Safari Dicor</option>
+<option>Chevrolet Aveo UVA</option>
+<option>Maruti Alto 800</option>
+<option>Mahindra Ssangyong Rexton</option>
+<option>Tata Indigo CS</option>
+<option>Honda CRV</option>
+<option>Hyundai Fluidic Verna</option>
+<option>Chevrolet Optra SRV</option>
+<option>Tata Indigo Manza</option>
+<option>Mercedes-Benz CLA Class</option>
+<option>Mahindra Scorpio Mhawk</option>
+<option>Datsun Go</option>
+<option>Hyundai Tucson</option>
+<option>Ford Endeavour</option>
+<option>BMW X6 Series</option>
+<option>Hyundai Elite i20</option>
+<option>Volkswagen Jetta</option>
+<option>Land Rover Range Rover Evoque</option>
+<option>Honda City ZX</option>
+<option>Mercedes-Benz GLA Class</option>
+<option>Mercedes-Benz C Class</option>
+<option>Maruti Alto K10</option>
+<option>Jaguar XJ</option>
+<option>Tata Indica Vista</option>
+<option>Tata Sumo Grande</option>
+<option>BMW X3 Series</option>
+<option>Mercedes-Benz SLK Class</option>
+<option>Hyundai Elantra Fluidic</option>
+<option>Force Force One</option>
+<option>Isuzu MU7</option>
+<option>BMW X1 Series</option>
+<option>Tata Winger</option>
+<option>Mini Cooper S</option>
+<option>Mercedes-Benz E Class</option>
+<option>Maruti Wagon R Stingray</option>
+<option>Volkswagen Polo GT</option>
+<option>Mahindra Verito Vibe</option>
+<option>Mercedes-Benz S Class</option>
+<option>Tata Indica V2</option>
+<option>Nissan Micra New</option>
+<option>Nissan Micra Active</option>
+<option>Force Trax</option>
+<option>Volvo XC90</option>
+<option>Hyundai Excel</option>
+<option>Hyundai Grandeur</option>
+<option>Hyundai Terracan</option>
+<option>Hyundai Active i20</option>
+<option>Maruti Estilo</option>
+<option>Maruti Grand Vitara</option>
+<option>Maruti Gypsy</option>
+<option>Maruti Kizashi</option>
+<option>Toyota Alphard</option>
+<option>Toyota Aristo</option>
+<option>Toyota Celica</option>
+<option>Toyota Celsior</option>
+<option>Toyota Chaser</option>
+<option>Toyota Corona</option>
+<option>Toyota Cressida</option>
+<option>Toyota Crown</option>
+<option>Toyota Estima</option>
+<option>Toyota Grand Hiace</option>
+<option>Toyota Granivia</option>
+<option>Toyota Hiace</option>
+<option>Toyota Hilux Surf</option>
+<option>Toyota Land Cruiser 200</option>
+<option>Toyota Land Cruiser Prado</option>
+<option>Toyota Lexus</option>
+<option>Toyota Lucida</option>
+<option>Toyota Mark II</option>
+<option>Toyota MR - S</option>
+<option>Toyota Prado</option><option>Toyota Prius</option><option>Toyota Rav4</option><option>Toyota Runner</option><option>Toyota Sera</option><option>Toyota Sprinter Marino</option><option>Toyota Supra</option><option>Toyota Surf</option><option>Toyota Tracer</option><option>Toyota Vellfire</option><option>Toyota Ventury</option><option>Toyota Vista</option><option>Toyota Vitz</option><option>Toyota Voxi</option><option>Toyota Wagan Harrier</option><option>Honda Civic Hybrid</option><option>Honda Concerto</option><option>Honda Integra</option><option>Honda Odyssey</option><option>Mahindra Armada</option><option>Mahindra Axe 2700</option><option>Mahindra CJ 500</option><option>Mahindra CL 500</option><option>Mahindra Classic</option><option>Mahindra Commander</option><option>Mahindra Economy</option><option>Mahindra Festiva</option><option>Mahindra Forester</option><option>Mahindra Genio Dc</option><option>Mahindra Gio</option><option>Mahindra Legend</option><option>Mahindra Major</option><option>Mahindra Marshal</option><option>Mahindra Max Festara</option><option>Mahindra Maxx Festiva</option><option>Mahindra Maxx</option><option>Mahindra Maxximo</option><option>Mahindra MM 550</option><option>Mahindra Savari</option><option>Mahindra Thar</option><option>Mahindra Universal</option><option>Mahindra Voyager</option><option>Mahindra Willys</option><option>Mahindra Renault Logan Edge</option><option>Mahindra Renault Logan Tourer</option><option>Mahindra Reva E20</option><option>Mahindra Reva Model</option><option>Tata Ace</option><option>Tata Estate</option><option>Tata Indicab</option><option>Tata Magic Iris</option><option>Tata Mobile</option><option>Tata Movus</option><option>Tata Siera</option><option>Tata Sumo</option><option>Tata Super Ace</option><option>Tata Xenon</option><option>Audi A7</option><option>Audi A8</option><option>Audi C7</option><option>Audi R8</option><option>Audi RS5</option><option>Audi RS7</option><option>Audi S4</option><option>Audi S6</option><option>Audi TT Coupe</option><option>Ford Cortina</option><option>Ford Escort</option><option>Ford Focus</option><option>Ford Galaxy</option><option>Ford Janses</option><option>Ford Jeep</option><option>Ford Lincoln</option><option>Ford Metro Cab</option><option>Ford Mondeo</option><option>Ford Mustang</option><option>Ford Perfect</option><option>Ford Woody</option><option>BMW 1 Series</option><option>BMW 6 Series Convertible</option><option>BMW 6 Series Coupe</option><option>BMW 840 CI</option><option>BMW Gran Turismo</option><option>BMW M Models</option><option>BMW X5 Series</option><option>BMW X6 M</option><option>BMW Z3 Models</option><option>BMW Z4 Models</option><option>Mini Cooper Hatch</option><option>Mini Cooper Cabrio</option><option>Mini Cooper Convertible</option><option>Mini Cooper Countryman</option><option>Mini Cooper S Countryman</option><option>Mini Cooper Rover</option><option>Chevrolet Camaro</option><option>Chevrolet Convertible</option><option>Chevrolet Corvette</option><option>Chevrolet Forester</option><option>Chevrolet Kalos</option><option>Chevrolet Lacetti</option><option>Chevrolet Open Touring</option><option>Chevrolet Pontiac</option><option>Chevrolet SSR</option><option>Jeep Grand Cherokee</option><option>Hindustan Motors Contessa Classic</option><option>Hindustan Motors RTV</option><option>Hindustan Motors Trekker</option><option>Bentley Arnage</option><option>Bentley Azure</option><option>Bentley Azure T</option><option>Bentley Brooklands</option><option>Bentley Continental</option><option>Bentley Continental Flying Spur</option><option>Bentley Continental GT</option><option>Bentley Continental GTC</option><option>Bentley Continental Supersports</option><option>Bentley Flying Spur</option><option>Bentley Mulsanne</option><option>Bentley Turbo R</option><option>Mercedes-Benz 200D</option><option>Mercedes-Benz 240D</option><option>Mercedes-Benz 300D</option><option>Mercedes-Benz CLK Class</option><option>Mercedes-Benz CLS Class</option><option>Mercedes-Benz G Class</option><option>Mercedes-Benz MB100</option><option>Mercedes-Benz MB140</option><option>Mercedes-Benz R Class</option><option>Mercedes-Benz SL Class</option><option>Mercedes-Benz Viano</option><option>Fiat 1100</option><option>Fiat 500</option><option>Fiat Adira Mobile</option><option>Fiat Alfa Romeo</option><option>Fiat Avventura</option><option>Fiat Bravo</option><option>Fiat Cinquecento</option><option>Fiat CV 57L</option><option>Fiat Marea</option><option>Fiat Petra</option><option>Fiat Premier</option><option>Fiat Siena</option><option>Fiat Super</option><option>Fiat Uno</option><option>Jaguar Daimler</option><option>Jaguar F Type</option><option>Jaguar Mark IV</option><option>Jaguar Mark X</option><option>Jaguar Sovereign</option><option>Jaguar XK</option><option>Jaguar XKR</option><option>Jaguar XKR-S</option><option>Lamborghini Aventador</option><option>Lamborghini Gallardo</option><option>Lamborghini Murcielago LP 640</option><option>Hummer H2 SUV</option><option>Hummer H3 SUV</option><option>Isuzu Panther</option><option>Isuzu Trooper</option><option>Datsun Bluebird</option><option>Daewoo Cielo</option><option>Daewoo Nexia</option><option>Aston Martin DB9</option><option>Aston Martin DBS</option><option>Aston Martin Rapide</option><option>Aston Martin Vanquish</option><option>Aston Martin Vantage V8</option><option>Aston Martin Virage</option><option>Ferrari 458</option><option>Ferrari 599</option><option>Ferrari F149</option><option>Ferrari FF</option><option>Force Trip</option><option>Nissan 350Z</option><option>Nissan 370Z</option><option>Nissan Bluebird</option><option>Nissan Cefiro</option><option>Nissan GTR</option><option>Nissan Infiniti</option><option>Nissan March K12</option><option>Nissan Murano</option><option>Nissan Skyline</option><option>Nissan Urvan</option><option>Nissan X-Trail</option><option>Volkswagen Beetle</option><option>Volkswagen Phaeton</option><option>Volkswagen Polo Cross</option><option>Volkswagen Touareg</option><option>Volkswagen Type 2</option><option>Volkswagen Type 1300</option><option>Volkswagen VW 1500</option><option>Mitsubishi Challenger</option><option>Mitsubishi Delica</option><option>Mitsubishi FTO</option><option>Mitsubishi GTO</option><option>Mitsubishi Lancer Cedia</option><option>Mitsubishi Lancer Evolution</option><option>Mitsubishi Montero</option><option>Mitsubishi Shogun</option><option>Mitsubishi Sigme</option><option>Land Rover Dfender</option><option>Land Rover Discovery</option><option>Land Rover Discovery 3</option><option>Land Rover Discovery 4</option><option>Land Rover Range Rover Sport</option><option>Renault Koleos</option><option>Renault Megane Scenic</option><option>Opel Astra</option><option>Opel Corsa Sail</option><option>Opel Corsa Swing</option><option>Opel Vectra</option><option>Premier Padmini</option><option>Premier Peugeot</option><option>Premier Rio Plus</option><option>Premier Sigma</option><option>Rolls Royce 1938</option><option>Rolls Royce Ghost</option><option>Rolls Royce Phantom</option><option>Rolls Royce Silver</option><option>Rolls Royce Silver Seraph</option><option>Rolls Royce Wraith</option><option>Ssangyong MB100</option><option>Ssangyong Musso</option><option>Ssangyong Musso TD</option><option>Volvo S80</option><option>Volvo V40</option><option>Volvo XC70</option><option>BMW i8</option><option>Datsun Go Plus</option><option>Ferrari F12 Berlinetta</option><option>Ford Figo Aspire</option><option>Hyundai Creta</option><option>Lamborghini Huracan</option><option>Maruti S Cross</option><option>Renault Lodgy</option><option>Honda New Jazz</option><option>Tata Magic</option><option>Ford Classic</option><option>Ferrari 360</option><option>Mercedes-Benz GLE</option><option>Renault Kwid</option><option>Tata Safari Storme</option><option>Mahindra TUV 300</option><option>Chevrolet Trailblazer</option><option>Land Rover Freelander</option><option>Maybach 57</option><option>Maybach 62</option><option>Mahindra KUV 100</option><option>Fiat Punto</option><option>Fiat Abarth Punto</option><option>Audi RS6 Avant</option><option>Audi TT</option><option>Chevrolet Sail Sedan</option><option>Chevrolet Tavera Neo</option><option>Fiat Ducato Caravan</option><option>Fiat Linea Classic</option><option>Fiat Palio NV</option>
+<option>Fiat Siena Weekend</option>
+<option>Ford Fiesta Classic</option>
+<option>Hyundai Neo Fluidic Elantra</option>
+<option>Mahindra Renault Logan Edge Connect</option>
+<option>Mahindra Renault Logan Play</option>
+<option>Maruti Dzire</option>
+<option>Nissan GT-R</option>
+<option>Reva i</option>
+<option>Skoda Octavia Combi</option>
+<option>Tata Grande Dicor</option>
+<option>Tata Indica eV2</option>
+<option>Tata Indica eV2 Xeta</option>
+<option>Tata Indigo eCS</option>
+<option>Tata Manza Club Class</option>
+<option>Toyota Commuter</option>
+<option>Toyota Premio</option>
+<option>Toyota Previa</option>
+<option>Volkswagen 1600</option>
+<option>Volkswagen Caravelle</option>
+<option>Ford Falcon</option>
+<option>Mahindra XUV500</option>
+<option>Toyota Tercel</option>
+<option>Toyota Starlet</option>
+<option>Audi S5</option>
+<option>Fiat Punto Avventura</option>
+<option>Nissan Primera</option><option>Hyundai Sonata One</option>
+<option>Mahindra Scorpio Three</option>
+<option>Tata Indica V2 Turbo</option>
+<option>Mahindra Nuvo Sport</option>
+<option>Tata Tiago</option>
+<option>ICML Rhino RX</option>
+<option>Honda BR-V</option>
+<option>Porsche Macan</option>
+<option>Mahindra e-Verito</option>
+<option>Mercedes-Benz GLC Class</option>
+<option>Datsun Redi-GO</option>
+<option>Fiat Adventure</option>
+<option>Volkswagen Ameo</option>
+<option>Jaguar XE</option>
+<option>Mahindra Reva</option>
+<option>Maruti Vitara</option>
+<option>Isuzu D-Max</option><option>Land Rover Discovery Sport</option>
+<option>Mercedes-Benz GLS</option>
+<option>Aprilia SRV 850</option>
+<option>Maruti Ignis</option><option>Tata Hexa</option>
+<option>Royal Enfield Himalayan</option>
+<option>Suzuki Access 125</option>
+<option>Vespa VXL</option>
+<option>Victory Vegas</option>
+<option>Kawasaki Z250</option>
+<option>Tata Tigor</option>
+<option>Tata Manza</option>
+<option>Honda WRV</option>
+<option>Toyota Camry</option>
+<option>Mercedes-Benz B Class</option>
+</select>
+</div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                    <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Model Year</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="year" class="form-control" id="year">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">2017</option>
+                                                        <option value="">2016</option>
+                                                        <option value="">2015</option>
+                                                        <option value="">2014</option>
+                                                        <option value="">2013</option>
+                                                        <option value="">2012</option>
+                                                        <option value="">2011</option>
+                                                        <option value="">2010</option>
+                                                        <option value="">2009</option>
+                                                        <option value="">2008</option>
+                                                        <option value="">2007</option>
+                                                        <option value="">2006</option>
+                                                        <option value="">2005</option>
+                                                        <option value="">2004</option>
+                                                        <option value="">2003</option>
+                                                        <option value="">2002</option>
+                                                        <option value="">2001</option>
+                                                        <option value="">2000</option>
+                                                        <option value="">1999</option>
+                                                        <option value="">1998</option>
+                                                        <option value="">1997</option>
+                                                        <option value="">1996</option>
+                                                        <option value="">1995</option>
+                                                        <option value="">1994</option>
+                                                        <option value="">1993</option>
+                                                        <option value="">1992</option>
+                                                        <option value="">1991</option>
+                                                        <option value="">1990</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            
+                                                       </div>   
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Plate No</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Plate No">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Chassis Number</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Chassis Number">
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Preferred Company</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="company" class="form-control" id="company">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Gulf Insurance Company</option>
+                                                        <option value="">Kuwait Insurance Company</option>
+                                                        <option value="">Al Ahleia Insurance Company</option>
+                                                        <option value="">Warba Insurance Company</option>
+                                                        <option value="">First Takaful Insurance Company</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">Policy Company</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="policy" class="form-control" id="policy">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Gulf Insurance Company</option>
+                                                        <option value="">Kuwait Insurance Company</option>
+                                                        <option value="">Al Ahleia Insurance Company</option>
+                                                        <option value="">Warba Insurance Company</option>
+                                                        <option value="">First Takaful Insurance Company</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+                                                       
+                                                       <div class="col-md-12">
+                                                       		<div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">User Remark</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="4">Want full Coverage for two years.</textarea>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                <label class="col-md-4 control-label">AMIB Remark</label>
+                                                <div class="col-md-8">
+                                                    <textarea class="form-control" rows="7">Policy Premium and details updated based on telephonic conversation. Please make payment.</textarea>
+                                                </div>
+                                            </div>
+                                                            </div>
+                                                       </div>
+                                                       
+
+                                    
+                            <div class="col-md-12">
+                                <div>
+                                    <h4 class="header-title m-t-0 m-b-20" style="color: #01704a;">Upload Documents</h4>                    
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Daftar Copy - Page 1</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 1</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 2</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 3</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Vehicle Picture - 4</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xs-12">
+                                        	<div class="col-xs-6">
+                                            <label class="control-label">Current Policy Copy - 1</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label class="control-label">Current Policy Copy - 2</label>
+                                            <input type="file" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                            <h4 class="header-title m-t-0 m-b-20" style="color: #01704a;">Payment Details</h4>
+                            	<div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Premium</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Premium">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Payment Date</label>
+                                                <div class="col-md-8">                                                    
+                                                    <input type="date" id="fname" readonly class="form-control">               
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Issue Fee</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Issue Fee">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Payment Method</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="method" class="form-control" id="method">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Cash</option>
+                                                        <option value="">Credit Card</option>
+                                                        <option value="">Check</option>
+                                                        <option value="">Knet Payment</option>
+                                                        <option value="">Paypal</option>
+                                                        <option value="">Wire Transfer</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Supervision Fee</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" placeholder="Supervision Fee">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Bank</label>
+                                                <div class="col-sm-8">
+                                                    <select data-placeholder="bank" class="form-control" id="bank">
+                                                        <option selected="selected">- select -</option>	
+                                                        <option value="700">Abu Dhabi Commercial Bank</option>
+                                                        <option value="701">Commercial Bank of Kuwait (K.S.C)</option>
+                                                        <option value="702">Gulf Bank (K.S.C)</option>
+                                                        <option value="703">Al Ahli Bank of Kuwait (K.S.C.P.)</option>
+                                                        <option value="704">Al Ahli United Bank</option>
+                                                        <option value="705">Burgan Bank (K.S.C)</option>
+                                                        <option value="706">Kuwait International Bank (K.S.C)</option>
+                                                        <option value="707">The Industrial Bank of Kuwait (K.S.C)</option>
+                                                        <option value="708">Kuwait Finance House</option>
+                                                        <option value="709">Boubyan Bank (K.S.C)</option>
+                                                        <option value="710">Warba Bank</option>
+                                                        <option value="711">National Bank of Kuwait (K.S.C)</option>
+                                                        <option value="75">Ahmedabad Mercantile Co-Op Bank Ltd</option>
+                                                        <option value="307">Airtel Payments Bank Limited</option>
+                                                        <option value="3">Allahabad Bank</option>
+                                                        <option value="106">Almora Urban Co-Operative Bank Ltd</option>
+                                                        <option value="4">Andhra Bank</option>
+                                                        <option value="139">Andhra Pragathi Grameena Bank</option>
+                                                        <option value="108">Apna Sahakari Bank Ltd</option>
+                                                        <option value="109">Austarlia and New Zealand Banking Gorup Ltd</option>
+                                                        <option value="5">Axis Bank</option>
+                                                        <option value="282">Bandhan Bank Limited</option>
+                                                        <option value="160">Bank Internasional Indonesia</option>
+                                                        <option value="6">Bank Of America</option>
+                                                        <option value="7">Bank Of Bahrain And Kuwait</option>
+                                                        <option value="8">Bank Of Baroda</option>
+                                                        <option value="9">Bank Of Ceylon</option>
+                                                        <option value="10">Bank Of India</option>
+                                                        <option value="11">Bank Of Maharashtra</option>
+                                                        <option value="76">Bank Of Nova Scotia</option>
+                                                        <option value="12">Bank Of Tokyo-Mitsubishi Ufj Ltd</option>
+                                                        <option value="13">Barclays Bank Plc</option>
+                                                        <option value="14">Bassein Catholic Co-Op Bank Ltd</option>
+                                                        <option value="77">Bharat Co-Op Bank (Mumbai) Ltd</option>
+                                                        <option value="173">Bharatiya Mahila Bank Ltd.</option>
+                                                        <option value="15">Bnp Paribas</option>
+                                                        <option value="16">Canara Bank</option>
+                                                        <option value="111">Capital Local Area Bank Ltd</option>
+                                                        <option value="296">Capital Small Finance Bank Ltd</option>
+                                                        <option value="17">Catholic Syrian Bank Ltd</option>
+                                                        <option value="18">Central Bank Of India</option>
+                                                        <option value="19">Chinatrust Commercial Bank</option>
+                                                        <option value="20">Citibank</option>
+                                                        <option value="21">Citizencredit Co-Op Bank Ltd</option>
+                                                        <option value="22">City Union Bank Ltd</option>
+                                                        <option value="136">Commonwealth Bank of Australia</option>
+                                                        <option value="23">Corporation Bank</option>
+                                                        <option value="78">Cosmos Co-Op Bank Ltd</option>
+                                                        <option value="24">Credit Agricole Corp and Investment Bank</option>
+                                                        <option value="113">Credit Suisse Ag</option>
+                                                        <option value="25">Dbs Bank Ltd</option>
+                                                        <option value="26">Dena Bank</option>
+                                                        <option value="298">Deogiri Nagari Sahakari Bank Ltd.</option>
+                                                        <option value="27">Deutsche Bank Ag</option>
+                                                        <option value="28">Development Credit Bank Ltd</option>
+                                                        <option value="29">Dhanlaxmi Bank Ltd</option>
+                                                        <option value="30">Dicgc</option>
+                                                        <option value="180">Doha Bank QSC</option>
+                                                        <option value="31">Dombivli Nagari Sahakari Bank Ltd</option>
+                                                        <option value="305">Equitas Small Finance Bank Limited</option>
+                                                        <option value="322">ESAF Small Finance Bank Limited</option>
+                                                        <option value="181">Export Import Bank Of India</option>
+                                                        <option value="79">Federal Bank Ltd</option>
+                                                        <option value="32">Firstrand Bank Ltd</option>
+                                                        <option value="80">Greater Bombay Co-Op Bank Ltd</option>
+                                                        <option value="135">Gurgaon Gramin Bank</option>
+                                                        <option value="33">Hdfc Bank Ltd</option>
+                                                        <option value="297">Himachal Pradesh State Cooperative Bank Ltd</option>
+                                                        <option value="34">Hsbc</option>
+                                                        <option value="35">Icici Bank Ltd</option>
+                                                        <option value="36">Idbi Bank Ltd</option>
+                                                        <option value="284">IDFC Bank Ltd</option>
+                                                        <option value="306">Idukki District Co-Operative Bank Ltd</option>
+                                                        <option value="37">Indian Bank</option>
+                                                        <option value="38">Indian Overseas Bank</option>
+                                                        <option value="39">Indusind Bank Ltd</option>
+                                                        <option value="163">Industrial and Commercial Bank of China Ltd.</option>
+                                                        <option value="285">Industrial Bank of Korea</option>
+                                                        <option value="40">Ing Vysya Bank Ltd</option>
+                                                        <option value="114">Jalgaon Janata Sahkari Bank Ltd</option>
+                                                        <option value="81">Jammu And Kashmir Bank Ltd</option>
+                                                        <option value="41">Janakalyan Sahakari Bank Ltd</option>
+                                                        <option value="166">Janaseva Sahakari Bank Borivli Ltd.</option>
+                                                        <option value="115">Janaseva Sahakari Bank Ltd Pune</option>
+                                                        <option value="101">Janata Sahkari Bank Ltd Pune</option>
+                                                        <option value="42">Jpmorgan Chase Bank</option>
+                                                        <option value="116">Kallappanna Awade Ich Janata S Bank</option>
+                                                        <option value="82">Kalupur Commercial Co Op Bank Ltd</option>
+                                                        <option value="83">Kalyan Janata Sahakari Bank Ltd</option>
+                                                        <option value="43">Kapole Co-Op Bank</option>
+                                                        <option value="44">Karnataka Bank Ltd</option>
+                                                        <option value="84">Karnataka State Co-Op Apex Bank Ltd</option>
+                                                        <option value="123">Karnataka Vikas Grameena Bank</option>
+                                                        <option value="45">Karur Vysya Bank</option>
+                                                        <option value="289">KEB Hana Bank</option>
+                                                        <option value="176">Kerala Gramin Bank</option>
+                                                        <option value="46">Kotak Mahindra Bank</option>
+                                                        <option value="153">Kurmanchal Nagar Sahakari Bank Ltd</option>
+                                                        <option value="85">Lakshmi Vilas Bank Ltd</option>
+                                                        <option value="47">Mahanagar Co-Op Bank Ltd</option>
+                                                        <option value="299">Maharashtra Gramin Bank</option>
+                                                        <option value="48">Maharashtra State Co-Op Bank</option>
+                                                        <option value="49">Mashreq Bank Psc</option>
+                                                        <option value="86">Mehsana Urban Co-Op Bank Ltd</option>
+                                                        <option value="50">Mizuho Corporate Bank Ltd</option>
+                                                        <option value="117">Mumbai District Central Co-Op Bank Ltd</option>
+                                                        <option value="169">Nagar Urban Co-operative Bank</option>
+                                                        <option value="125">Nagpur Nagarik Sahakari Bank Ltd</option>
+                                                        <option value="87">Nainital Bank Ltd</option>
+                                                        <option value="155">National Australia Bank</option>
+                                                        <option value="286">National Bank of Abu Dhabi</option>
+                                                        <option value="51">New  India Co-Op  Bank  Ltd</option>
+                                                        <option value="52">Nkgsb Co-Op Bank Ltd</option>
+                                                        <option value="138">North Malabar Gramin Bank</option>
+                                                        <option value="53">Nutan Nagarik Sahakari Bank Ltd</option>
+                                                        <option value="54">Oman International Bank Saog</option>
+                                                        <option value="55">Oriental Bank Of Commerce</option>
+                                                        <option value="56">Parsik Janata Sahakari Bank Ltd</option>
+                                                        <option value="177">Pragathi Krishna Gramin Bank</option>
+                                                        <option value="137">Prathama Bank</option>
+                                                        <option value="118">Prime Co-Operative Bank Ltd</option>
+                                                        <option value="57">Punjab And Maharashtra Co-Op Bank Ltd</option>
+                                                        <option value="58">Punjab And Sind Bank</option>
+                                                        <option value="59">Punjab National Bank</option>
+                                                        <option value="119">Rabobank International (CCRB)</option>
+                                                        <option value="168">Rajgurunagar Sahkari Bank Ltd</option>
+                                                        <option value="60">Rajkot Nagarik Sahakari Bank Ltd</option>
+                                                        <option value="88">Ratnakar Bank Ltd</option>
+                                                        <option value="61">Reserve Bank Of India</option>
+                                                        <option value="89">Royal Bank Of Scotland</option>
+                                                        <option value="295">Samarth Sahakari Bank Ltd</option>
+                                                        <option value="90">Saraswat Co-Op Bank Ltd</option>
+                                                        <option value="140">SBER Bank</option>
+                                                        <option value="91">Shamrao Vithal Co-Op Bank Ltd</option>
+                                                        <option value="179">Shikshak Sahkari Bank Ltd.</option>
+                                                        <option value="62">Shinhan Bank</option>
+                                                        <option value="293">Shivalik Mercentile Coop Bank Ltd</option>
+                                                        <option value="142">Shri Chhatrapati Rajarshi Shahu Urban Co-Op Bank Ltd</option>
+                                                        <option value="63">Societe Generale</option>
+                                                        <option value="64">South Indian Bank</option>
+                                                        <option value="65">Standard Chartered Bank</option>
+                                                        <option value="66">State Bank Of Bikaner And Jaipur</option>
+                                                        <option value="67">State Bank Of Hyderabad</option>
+                                                        <option value="68">State Bank Of India</option>
+                                                        <option value="69">State Bank Of Mauritius Ltd</option>
+
+                                                        <option value="70">State Bank Of Mysore</option>
+                                                        <option value="71">State Bank Of Patiala</option>
+                                                        <option value="72">State Bank Of Travancore</option>
+                                                        <option value="148">Sumitomo Mitsui Banking Corporation</option>
+                                                        <option value="281">Surat National Co-operative Bank</option>
+                                                        <option value="92">Surat Peoples Co-Op Bank Ltd</option>
+                                                        <option value="319">Suryoday Small Finance Bank Limited</option>
+                                                        <option value="73">Syndicate Bank</option>
+                                                        <option value="74">Tamilnad Mercantile Bank Ltd</option>
+                                                        <option value="93">Tamilnadu State Apex Co-Op Bank Ltd</option>
+                                                        <option value="309">Telangana State Coop Apex Bank</option>
+                                                        <option value="120">Thane Bharat Sahakari Bank Ltd</option>
+                                                        <option value="150">Thane District Central Co-operative Bank Ltd</option>
+                                                        <option value="94">Thane Janata Sahakari Bank Ltd</option>
+                                                        <option value="121">The A.P. Mahesh Co-Op Urban Bank Ltd</option>
+                                                        <option value="151">The Akola District Central Co-operative Bank</option>
+                                                        <option value="172">The Akola Janata Commercial Co-operative Bank</option>
+                                                        <option value="161">The Andhra Pradesh State Co-op Bank Ltd.</option>
+                                                        <option value="321">The Baramati Sahakari Bank Limited</option>
+                                                        <option value="167">The Delhi State Co-operative Bank Ltd.</option>
+                                                        <option value="152">The Gadchiroli District Central Co-operative Bank Ltd</option>
+                                                        <option value="122">The Gujarat State Co-Operative Bank Ltd</option>
+                                                        <option value="280">The Hasti Co-operative Bank Ltd.</option>
+                                                        <option value="154">The Jalgaon Peoples Co-op Bank</option>
+                                                        <option value="126">The Kangra Co-Operative Bank Ltd.</option>
+                                                        <option value="102">The Karad Urban Co-Op Bank Ltd</option>
+                                                        <option value="124">The Municipal Co-Operative Bank Ltd. Mumbai</option>
+                                                        <option value="104">The Nasik Merchants Co-Op Bank Ltd</option>
+                                                        <option value="311">The Navnirman Co-Operative Bank Limited</option>
+                                                        <option value="292">The Pandharpur Urban Coop Bank Ltd</option>
+                                                        <option value="127">The Rajasthan State Co-Operative Bank Ltd</option>
+                                                        <option value="159">The Sahebrao Deshmukh Co-op Bank Ltd.</option>
+                                                        <option value="149">The Seva Vikas Co-operative Bank Ltd</option>
+                                                        <option value="162">The Solapur Janata Sahkari Bank Ltd.</option>
+                                                        <option value="129">The Surat District Co-Operative Bank Ltd</option>
+                                                        <option value="133">The Sutex Co Op Bank Ltd</option>
+                                                        <option value="144">The Varachha Co-Op. Bank Ltd</option>
+                                                        <option value="130">The Vishweshwar Sahakari Bank Ltd Pune</option>
+                                                        <option value="178">The Zoroastrian Cooperative Bank Ltd.</option>
+                                                        <option value="145">Tumkur Grain Merchants Cooperative Bank Ltd</option>
+                                                        <option value="103">UBS AG</option>
+                                                        <option value="96">Uco Bank</option>
+                                                        <option value="314">Ujjivan Small Finance Bank Limited</option>
+                                                        <option value="97">Union Bank Of India</option>
+                                                        <option value="98">United Bank Of India</option>
+                                                        <option value="164">United Overseas Bank</option>
+                                                        <option value="323">Utkarsh Small Finance Bank</option>
+                                                        <option value="146">Vasai Vikas Sahakari Bank Ltd</option>
+                                                        <option value="99">Vijaya Bank</option>
+                                                        <option value="95">West Bengal State Co-Op Bank Ltd</option>
+                                                        <option value="147">Westpac Banking Corporation</option>
+                                                        <option value="131">Woori Bank</option>
+                                                        <option value="100">Yes Bank Ltd</option>
+                                                        <option value="165">Zila Sahkari Bank Ltd. Ghaziabad</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label">Net Payable</label>
+                                                <div class="col-md-8">
+                                                    <input type="text" class="form-control" placeholder="Net Payable">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                                <label class="col-md-4 control-label">Card Type</label>
+                                                <div class="col-md-8">
+                                                    <select data-placeholder="payment" class="form-control" id="payment">
+                                                        <option selected="selected">- select -</option>
+                                                        <option value="">Visa</option>
+                                                        <option value="">MasterCard</option>
+                                                        <option value="">Discover</option>
+                                                        <option value="">American Express</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                	<div class="col-md-6">
+                                    	<div class="form-group">
+                                                <label class="col-md-4 control-label"></label>
+                                                <div class="col-md-8">
+                                                   <button class="btn btn-lg btn-custom btn-block" type="submit">Submit Request</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <div class="form-group account-btn text-center m-t-10">
+                                            	<label class="col-md-4 control-label"></label>
+                                                <div class="col-md-4">
+                                                    <button class="btn btn-lg btn-custom btn-block" type="payment">Make Payment</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>                             
+                                    </div> <!-- row end -->
+                                    </form>
+                                   
+                                                    </div>
+                                                    
+                                                    <div class="tab-pane" id="details"><br>
+                                                        
+                                                        <!-- policy details start -->
+                                    
+                                    <div class="row">
+                            <div class="col-md-12">
+                                <div class="m-b-20" >
+                                    <h5>Policy Details</h5>                                    
+
+                                    <table id="datatable-fixed-col responsive" class="table table-striped table-bordered">
+                                        <thead>
+                                        <tr>
+                                            <th>KT No</th>
+                                            <th>Chassis No</th>
+                                            <th>Description</th>
+                                            <th>Model Year</th>
+                                            <th>Make</th>
+                                            <th>Sub Make</th>
+                                            <th>Insurance Co</th>
+                                            <th>Policy No</th>
+                                            <th>Policy Date</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Net Amount</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>06/234145</td>
+                                            <td>JKMYP012345345678</td>
+                                            <td>4 Wheel Drive</td>
+                                            <td>2017</td>
+                                            <td>Suzuki</td>
+                                            <td>Ignis</td>
+                                            <td>First Takaful</td>
+                                            <td>012345345678</td>
+                                            <td>11-04-2012</td>
+                                            <td>16-07-2013</td>
+                                            <td>15-07-2014</td>
+                                            <td>KWD 85</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06/234145</td>
+                                            <td>AUQ7P012345345678</td>
+                                            <td>German Automobile</td>
+                                            <td>2016</td>
+                                            <td>Audi</td>
+                                            <td>Q7</td>
+                                            <td>First Takaful</td>
+                                            <td>425345345678</td>
+                                            <td>19-04-2014</td>
+                                            <td>08-06-2015</td>
+                                            <td>07-06-2016</td>
+                                            <td>KWD 60</td>
+                                        </tr>
+                                        <tr>
+                                             <td>06/234145</td>
+                                            <td>TOCOP012345345678</td>
+                                            <td>Adventure Model</td>
+                                            <td>2016</td>
+                                            <td>Toyota</td>
+                                            <td>Corolla</td>
+                                            <td>First Takaful</td>
+                                            <td>122345345678</td>
+                                            <td>22-04-2015</td>
+                                            <td>12-05-2015</td>
+                                            <td>11-05-2016</td>
+                                            <td>KWD 45</td>
+                                        </tr>
+                                        <tr>
+                                             <td>06/234145</td>
+                                            <td>MBSCP012345345678</td>
+                                            <td>Sports Model</td>
+                                            <td>2015</td>
+                                            <td>Mercedes Benz</td>
+                                            <td>S Class</td>
+                                            <td>First Takaful</td>
+                                            <td>852345345678</td>
+                                            <td>20-02-2015</td>
+                                            <td>27-11-2016</td>
+                                            <td>26-11-2017</td>
+                                            <td>KWD 125</td>
+                                        </tr>                                                                               
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                                    
+                                    <!-- policy details end -->
+                                                        
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END HOME -->
+                    <!-- end container -->
+
+
+
+                    <div class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="pull-right hidden-xs">
+                                        <a href="#"><font color="#337ab7">Privacy Policy</font></a> <font color="#ffffff">|</font> <a href="#"><font color="#337ab7">Sitemap</font></a>
+                                    </div>
+                                    <div>
+                                        The Oriental Insurance Company Ltd. All rights reserved Insurance is the subject matter of solicitation. IRDA Reg. No. 556
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end footer -->
+
+                </div>
+                <!-- End #page-right-content -->
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- end .page-contentbar -->
+        </div>
+        <!-- End #page-wrapper -->
+
+
+
+         <!-- js placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.min.js"></script>
+        
+         <!-- Datatable js -->
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/jszip.min.js"></script>
+        <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.colVis.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedColumns.min.js"></script>
+        <!-- init -->
+        <script src="assets/pages/jquery.datatables.init.js"></script>
+
+        <script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+        <script src="assets/plugins/select2/js/select2.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/parsleyjs/parsley.min.js"></script>
+
+        <script src="assets/plugins/moment/moment.js"></script>
+     	
+        <script src="assets/plugins/summernote/summernote.min.js"></script>  
+
+        <!-- form advanced init js -->
+        <!--<script src="assets/pages/jquery.form-advanced.init.js"></script>-->
+
+        <!-- App Js -->
+        <script src="assets/js/jquery.app.js"></script>
+
+    </body>
+</html>
